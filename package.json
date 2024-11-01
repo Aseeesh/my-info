@@ -1,11 +1,38 @@
 {
-  "name": "nextjs-tailwindcss-portfolio",
+  "name": "@ashish/portofolio",
+  "version": "1.1.4",
   "private": true,
+  "description": "Portofolio page of Ashish Rijal",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Aseeesh/my-info"
+  },
+  "keywords": [
+    "ianriizky",
+    "Node.js",
+    "React",
+    "Next.js",
+    "Tailwind",
+    "Markdown",
+    "GitHub Pages"
+  ],
+  "author": {
+    "name": "Ashish Rijal",
+    "email": "ashishrijal1@gmail.com"
+  },
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Aseeesh/my-info/issues"
+  },
+  "homepage": "https://github.com/Aseeesh/my-info#readme",
   "scripts": {
     "dev": "next dev",
-    "build": "next build",
+    "dev:secure": "next dev --experimental-https",
+    "build:image": "next-image-export-optimizer",
+    "build": "next build && pnpm run build:image && next export",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "format": "prettier --write ."
   },
   "dependencies": {
     "@emailjs/browser": "^4.4.1",
@@ -15,6 +42,8 @@
     "clsx": "^2.1.1",
     "framer-motion": "^5.5.3",
     "next": "^13.0.5",
+    "next-image-export-optimizer": "^1.15.1",
+    "prettier": "^3.3.3",
     "react": "^18.2.0",
     "react-countup": "^6.1.1",
     "react-dom": "^18.2.0",

@@ -5,6 +5,7 @@ import { motion } from 'framer-motion';
 import { FiSun, FiMoon, FiX, FiMenu } from 'react-icons/fi'; 
 import logoLight from '../../public/images/logo.jpeg';
 import useThemeSwitcher from '../../hooks/useThemeSwitcher';
+import React from 'react';
 
 function AppHeader() {
 	const [showMenu, setShowMenu] = useState(false);
@@ -51,7 +52,7 @@ function AppHeader() {
 							{activeTheme === 'dark' ? (
 								<Image
 									src={logoLight}
-									class="rounded-[20px]"
+									className="rounded-[20px]"
 									alt="Dark Logo"
 									width={100}
 									height={100}
@@ -59,7 +60,7 @@ function AppHeader() {
 							) : (
 								<Image
 									src={logoLight}
-									class="rounded-[20px]"
+									className="rounded-[20px]"
 									alt="Dark Logo"
 									width={100}
 									height={100}

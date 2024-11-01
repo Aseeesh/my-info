@@ -1,9 +1,12 @@
-const isProd=process.env.NODE_ENV='production'
+// next.config.js
+const isGithubActions = process.env.GITHUB_ACTIONS || false;
+const repo = isGithubActions ? "/Aseeesh/my-info" : "";
 
 module.exports = {
-  basePath:isProd?"~/my-info":"",
+  output: 'export', // Export static HTML for GitHub Pages
+  basePath: repo,   // Specify the base path if using GitHub Pages
+  assetPrefix: repo, // Prefix assets path for GitHub Pages
   reactStrictMode: true,
-  output:"export",
   distDir:"dist",
   images:{
     unoptimized:true
