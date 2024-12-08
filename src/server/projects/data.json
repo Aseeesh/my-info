@@ -1,0 +1,707 @@
+[
+  {
+    "id": "22ffaa31-647c-4b9a-b198-325e6abf9848",
+    "title": "My Profile",
+    "description": "This is my Portfolio Website, where I provide a brief introduction about myself, highlight my professional experiences, and share my contact details. Additionally, there is a form that allows anyone to send me a message directly via email.",
+    "url": "https://www.linkedin.cn/incareer/company/whitehatengineering",
+    "category": "Web Application",
+    "img": "/images/Software Development.png",
+    "ProjectHeader": {
+      "title": "My Profile",
+      "publishDate": ["11-2024"],
+      "tags": ["FullStack Software Engineer"]
+    },
+    "ProjectImages": [
+      {
+        "id": "e26a7a26-db2a-4827-898e-058026e523cf",
+        "title": "My Profile",
+        "img": "/images/Software Development.png"
+      }
+    ],
+    "ProjectInfo": {
+      "ClientHeading": "About Me",
+      "CompanyInfo": [
+        {
+          "id": "283a2ebc-5be0-4882-8540-6b27b55cdd9f",
+          "title": "Remote Job",
+          "isURL": false,
+          "details": "Location"
+        },
+        {
+          "id": "c8e68588-a613-47e4-9c13-e3e29dec55a6",
+          "title": "Project Website",
+          "isURL": true,
+          "details": "https://aseeesh.github.io/my-info/"
+        }
+      ],
+      "Technologies": [
+        {
+          "title": "Tools & Technologies",
+          "techs": ["NEXTJS", "React", "HOOKS", "GITHUB"]
+        }
+      ],
+      "KeyRoleHeading": "KeyRole",
+      "KeyRoleDetails": [
+        {
+          "id": "99c6999b-11d2-4484-9626-0332bf948ac9",
+          "details": " Built the website using Next.js, React hooks, and JSON for data"
+        },
+        {
+          "id": "38e10f3e-dadf-46c1-b2d6-1e041f731044",
+          "details": "Learned Next.js and debugged independently"
+        },
+        {
+          "id": "c8e68588-a613-47e4-9c13-e3e29dec55a6",
+          "details": "Created a responsive, user-friendly interface"
+        }
+      ],
+      "KeyAchievementHeading": "Key Achievement",
+      "KeyAchievementDetails": [
+        {
+          "id": "38e10f3e-dadf-46c1-b2d6-1e041f731044",
+          "details": "Used JSON for lightweight data management."
+        },
+        {
+          "id": "e5ca6d91-ca16-4323-918d-fdccd60120b6",
+          "details": "Deployed successfully using GitHub Actions to GitHub Pages"
+        },
+        {
+          "id": "99c6999b-11d2-4484-9626-0332bf948ac9",
+          "details": "Created a professional portfolio showcasing skills and projects."
+        }
+      ]
+    }
+  },
+  {
+    "id": "09eb1c6d-70d4-429e-9b80-92b2c3abf8c4",
+    "title": "Game Development",
+    "description": "This project is a classic casino game using Unity, integrating AI-powered NPCs with interactive dialogues generated through Large Language Models (LLMs) to create a unique player experience. The result was a revamped game that combines gameplay with cutting-edge conversational capabilities.",
+    "url": "https://www.linkedin.cn/incareer/company/whitehatengineering",
+    "category": "Web Application",
+    "img": "/images/Software Development.png",
+    "ProjectHeader": {
+      "title": "Game Development",
+      "publishDate": ["01-2024", "Present"],
+      "tags": ["FullStack Software Engineer"]
+    },
+    "ProjectImages": [
+      {
+        "id": "e26a7a26-db2a-4827-898e-058026e523cf",
+        "title": "Game Development",
+        "img": "/images/Software Development.png"
+      }
+    ],
+    "ProjectInfo": {
+      "ClientHeading": "Freelancer",
+      "CompanyInfo": [
+        {
+          "id": "283a2ebc-5be0-4882-8540-6b27b55cdd9f",
+          "title": "Remote Job",
+          "isURL": false,
+          "details": "Location"
+        },
+        {
+          "id": "e26a7a26-db2a-4827-898e-058026e523cf",
+          "title": "FreeLancing",
+          "isURL": false,
+          "details": "FreeLancing"
+        }
+      ],
+      "Technologies": [
+        {
+          "title": "Tools & Technologies",
+          "techs": ["UNITY", "c#", "API", "Postgres", "GITHUB", "Ollama", "LLM"]
+        }
+      ],
+      "KeyRoleHeading": "KeyRole",
+      "KeyRoleDetails": [
+        {
+          "id": "99c6999b-11d2-4484-9626-0332bf948ac9",
+          "details": "Integrated a Large Language Model to power NPC behaviors, decision-making, and interactive dialogues"
+        },
+        {
+          "id": "38e10f3e-dadf-46c1-b2d6-1e041f731044",
+          "details": "Worked in Implementing core gameplay mechanics"
+        },
+        {
+          "id": "c8e68588-a613-47e4-9c13-e3e29dec55a6",
+          "details": "Integrating the game with server-side logic for features like player authentication, data storage, and real-time interactions"
+        },
+        {
+          "id": "e5ca6d91-ca16-4323-918d-fdccd60120b6",
+          "details": "Designing user interfaces that are intuitive, user-friendly, and aesthetically pleasing"
+        },
+        {
+          "id": "e26a7a26-db2a-4827-898e-058026e523cf",
+          "details": "Working effectively with artists, designers, and programmers to ensure a cohesive game experience"
+        }
+      ],
+      "KeyAchievementHeading": "Key Achievement",
+      "KeyAchievementDetails": [
+        {
+          "id": "38e10f3e-dadf-46c1-b2d6-1e041f731044",
+          "details": "Quickly adapted to Unity's game development environment, learning C# scripting, asset management, and scene design within a short timeframe"
+        },
+        {
+          "id": "e5ca6d91-ca16-4323-918d-fdccd60120b6",
+          "details": "Successfully integrated a Large Language Model LLM to power NPC decision-making and interactions"
+        },
+        {
+          "id": "99c6999b-11d2-4484-9626-0332bf948ac9",
+          "details": "Streamlined game logic and API integration, ensuring smooth performance"
+        }
+      ]
+    }
+  },
+  {
+    "id": "137aee88-bfd7-4054-a78c-8d6ce6d46e1e",
+    "title": "Food Cost Management",
+    "description": "This system is a comprehensive Restaurant Management System with features for Point of Sale (POS), Inventory, and Payroll Generation. The system aims to streamline operations, enhance customer experience, and improve staff efficiency",
+    "url": "https://www.linkedin.cn/incareer/company/whitehatengineering",
+    "category": "Web Application",
+    "img": "/images/Software Development.png",
+    "ProjectHeader": {
+      "title": "Food Cost Management",
+      "publishDate": ["04-2022", "12-2023"],
+      "tags": ["FullStack Software Engineer"]
+    },
+    "ProjectImages": [
+      {
+        "id": "e26a7a26-db2a-4827-898e-058026e523cf",
+        "title": "Food Cost Management",
+        "img": "/images/Software Development.png"
+      }
+    ],
+    "ProjectInfo": {
+      "ClientHeading": "About Client",
+      "CompanyInfo": [
+        {
+          "id": "283a2ebc-5be0-4882-8540-6b27b55cdd9f",
+          "title": "Remote Job",
+          "isURL": false,
+          "details": "Location"
+        },
+        {
+          "id": "e26a7a26-db2a-4827-898e-058026e523cf",
+          "title": "WhiteHat Engineering",
+          "isURL": true,
+          "details": "https://www.linkedin.com/company/whitehatengineering/"
+        }
+      ],
+      "Technologies": [
+        {
+          "title": "Tools & Technologies",
+          "techs": [".Net", "MVC", "Angular", "MSSQL", "JIRA", "GITHUB", "AWS"]
+        }
+      ],
+      "KeyRoleHeading": "KeyRole",
+      "KeyRoleDetails": [
+        {
+          "id": "99c6999b-11d2-4484-9626-0332bf948ac9",
+          "details": "Converted the existing .net 2 mvc app to .net 6 and also involved in creating the new module in react"
+        },
+        {
+          "id": "38e10f3e-dadf-46c1-b2d6-1e041f731044",
+          "details": "Converting the existing web services into rest api in nest JS."
+        },
+        {
+          "id": "3c227b0b-3b11-4751-845d-b70cec85b4e6",
+          "details": "Involve in creating a separate new application written in Java and angular"
+        },
+        {
+          "id": "3a355be3-d7cc-4832-828f-465fe25a42b5",
+          "details": "Take responsibility for the given module, communicate with the PM for the requirements and coordinate with the team members to complete the task"
+        },
+        {
+          "id": "9ac8f688-de63-44ff-843b-00133aefa439",
+          "details": "Created architecture for the API in next js"
+        },
+        {
+          "id": "9adbdec4-dd67-44c5-a5c9-90f4154e5bcd",
+          "details": "Worked in Jira and agile methodology and also involved in the code review process"
+        }
+      ],
+      "KeyAchievementHeading": "Key Achievement",
+      "KeyAchievementDetails": [
+        {
+          "id": "e5ca6d91-ca16-4323-918d-fdccd60120b6",
+          "details": "Experience with EC2 servers, S3 buckets and also used Azure and GIT for CI/CD pipeline"
+        },
+        {
+          "id": "99c6999b-11d2-4484-9626-0332bf948ac9",
+          "details": "Successfully converted the project from old version of .net to the latest .net 6"
+        }
+      ]
+    }
+  },
+  {
+    "id": "19142fab-9742-4a73-8401-854bb0b342c2",
+    "title": "Trasndoclink Cargo Logistic",
+    "description": "This system is a comprehensive solution designed to streamline the process of managing cargo shipments. It enables users to create and manage detailed records of cargo shipments, including invoices, cargo information, and real-time location tracking. This system aims to provide efficient and accurate cargo management capabilities, facilitating seamless communication between shippers, carriers, and customers, ultimately enhancing overall supply chain operations.",
+    "url": "https://www.linkedin.cn/incareer/company/usome/",
+    "category": "Web Application",
+    "img": "/images/Software Development.png",
+    "ProjectHeader": {
+      "title": "Trasndoclink Cargo Logistic",
+      "publishDate": ["03-2021", "03-2022"],
+      "tags": ["Web Application"]
+    },
+    "ProjectImages": [
+      {
+        "id": "c8e68588-a613-47e4-9c13-e3e29dec55a6",
+        "title": "Trasndoclink Cargo Logistic",
+        "img": "/images/Software Development.png"
+      }
+    ],
+    "ProjectInfo": {
+      "ClientHeading": "About Client",
+      "CompanyInfo": [
+        {
+          "id": "b0701d9c-4f5b-4e10-8f5a-30d70c5d12f2",
+          "title": "Kathmandu, Nepal",
+          "isURL": false,
+          "details": "Location"
+        },
+        {
+          "id": "c8e68588-a613-47e4-9c13-e3e29dec55a6",
+          "title": "USOME",
+          "isURL": true,
+          "details": "https://www.linkedin.com/company/usome/"
+        }
+      ],
+      "Technologies": [
+        {
+          "title": "Tools & Technologies",
+          "techs": [".Net", "MVC", "JavaScript", "MSSQL", "Asure"]
+        }
+      ],
+      "KeyRoleHeading": "KeyRole",
+      "KeyRoleDetails": [
+        {
+          "id": "e5ca6d91-ca16-4323-918d-fdccd60120b6",
+          "details": "Coordinated with business analysts for the project requirements, creating the technical document."
+        },
+        {
+          "id": "99c6999b-11d2-4484-9626-0332bf948ac9",
+          "details": "Communicated with cross-functional teams, including QA, UI/UX, and product management, to ensure smooth project execution"
+        },
+        {
+          "id": "38e10f3e-dadf-46c1-b2d6-1e041f731044",
+          "details": "Implemented scrum, to enhance teamʼs productivity and efficiency"
+        },
+        {
+          "id": "3c227b0b-3b11-4751-845d-b70cec85b4e6",
+          "details": "Created architecture for the project and helped team members to resolve the task and also involved in the code review process"
+        }
+      ],
+      "KeyAchievementHeading": "Key Achievement",
+      "KeyAchievementDetails": [
+        {
+          "id": "e5ca6d91-ca16-4323-918d-fdccd60120b6",
+          "details": "As a team lead, maintained the communication channel among the team members and to develop software for cargo logistics"
+        },
+        {
+          "id": "99c6999b-11d2-4484-9626-0332bf948ac9",
+          "details": "Implemented the Azure for kanban board and CI/CD pipeline for the smooth deployment process."
+        }
+      ]
+    }
+  },
+  {
+    "id": "7b1498d2-ab98-4840-9b7f-0973efaf900c",
+    "title": "Software for Multi Store Ecommerce ",
+    "description": "This system is tailored to meet the demands of a multi-store e-commerce platform, seamlessly integrating merchant management tools with an intuitive dashboard to track accounts and inventory. For consumers, we offer a user-friendly mobile application that provides an immersive shopping experience across multiple stores. This cohesive solution aims to streamline operations, enhance customer engagement, and drive business growth for merchants in a diverse retail landscape.",
+    "url": "#",
+    "category": "Web Application/Mobile Application",
+    "img": "/images/Software Development.png",
+    "ProjectHeader": {
+      "title": "Multi Store Ecommerce",
+      "publishDate": ["03-2020", "12-2021"],
+      "tags": ["Web Application,Mobile Application"]
+    },
+    "ProjectImages": [
+      {
+        "id": "c8e68588-a613-47e4-9c13-e3e29dec55a6",
+        "title": "Multi Store Ecommerce",
+        "img": "/images/Software Development.png"
+      }
+    ],
+    "ProjectInfo": {
+      "ClientHeading": "About Client",
+      "CompanyInfo": [
+        {
+          "id": "b0701d9c-4f5b-4e10-8f5a-30d70c5d12f2",
+          "title": "Remote Job",
+          "isURL": false,
+          "details": "Location"
+        },
+        {
+          "id": "e26a7a26-db2a-4827-898e-058026e523cf",
+          "title": "FreeLancing",
+          "isURL": false,
+          "details": "FreeLancing"
+        }
+      ],
+      "Technologies": [
+        {
+          "title": "Tools & Technologies",
+          "techs": [".Net", "API", "Angular", "MSSQL", "React-Native", "NGRX"]
+        }
+      ],
+      "KeyRoleHeading": "KeyRole",
+      "KeyRoleDetails": [
+        {
+          "id": "e5ca6d91-ca16-4323-918d-fdccd60120b6",
+          "details": "Created a mobile app with redux to handle the state management and sagas to handle the api calls"
+        },
+        {
+          "id": "99c6999b-11d2-4484-9626-0332bf948ac9",
+          "details": "Design and develop the interactive interfaces such as user login, registration, cart, scrollable list, QRcode generation and read the data for QR scan."
+        },
+        {
+          "id": "38e10f3e-dadf-46c1-b2d6-1e041f731044",
+          "details": "Worked in API which was written in to process the data from the mobile app."
+        }
+      ],
+      "KeyAchievementHeading": "Key Achievement",
+      "KeyAchievementDetails": [
+        {
+          "id": "e5ca6d91-ca16-4323-918d-fdccd60120b6",
+          "details": "Added a new module to the existing .net MVC web application which was developed in angular 9 and incorporated as an iframe"
+        },
+        {
+          "id": "99c6999b-11d2-4484-9626-0332bf948ac9",
+          "details": "Worked in new technology, mobile app development in react native and .net core 2.0."
+        },
+        {
+          "id": "3c227b0b-3b11-4751-845d-b70cec85b4e6",
+          "details": "Enhanced the knowledge of state management and implemented the redux structure in mobile application and NGRX in Angular project"
+        }
+      ]
+    }
+  },
+  {
+    "id": "cd1773b9-e9ff-46f8-a6bf-9c3372a8d941",
+    "title": "GBcare Case Management System",
+    "description": "This system is designed to provide comprehensive and efficient medical assistance to nurses and healthcare professionals, ensuring they have access to the necessary resources and support to deliver high-quality patient care. It seamlessly integrates with existing health insurance systems, streamlining claims processing, billing, and reimbursement, while also offering a range of value-added services that cater to the unique needs of nursing staff. By providing timely and accurate medical assistance, this system aims to enhance nurse satisfaction, reduce administrative burdens, and promote better health outcomes for patients.",
+    "url": "https://www.linkedin.cn/incareer/company/spiralogics-inc./",
+    "category": "Web Application",
+    "img": "/images/Software Development.png",
+    "ProjectHeader": {
+      "title": "GBcare Case Management System",
+      "publishDate": ["03-2016", "12-2019"],
+      "tags": ["Web Application"]
+    },
+    "ProjectImages": [
+      {
+        "id": "c8e68588-a613-47e4-9c13-e3e29dec55a6",
+        "title": "GBcare Case Management System",
+        "img": "/images/Software Development.png"
+      }
+    ],
+    "ProjectInfo": {
+      "ClientHeading": "About Client",
+      "CompanyInfo": [
+        {
+          "id": "b0701d9c-4f5b-4e10-8f5a-30d70c5d12f2",
+          "title": "Kathmandu, Nepal",
+          "isURL": false,
+          "details": "Location"
+        },
+        {
+          "id": "c8e68588-a613-47e4-9c13-e3e29dec55a6",
+          "title": "Spiralogics",
+          "isURL": false,
+          "details": "https://www.linkedin.cn/incareer/company/spiralogics-inc./"
+        }
+      ],
+      "Technologies": [
+        {
+          "title": "Tools & Technologies",
+          "techs": [".Net", "MVC", "JavaScript", "MSSQL", "Asure"]
+        }
+      ],
+      "KeyRoleHeading": "KeyRole",
+      "KeyRoleDetails": [
+        {
+          "id": "e5ca6d91-ca16-4323-918d-fdccd60120b6",
+          "details": "Worked as a Team lead, had to coordinate with business analysts for the requirement and create the task among the team members."
+        },
+        {
+          "id": "99c6999b-11d2-4484-9626-0332bf948ac9",
+          "details": "Involved in helping the team members and reviewing their code in order to maintain the code structure"
+        },
+        {
+          "id": "38e10f3e-dadf-46c1-b2d6-1e041f731044",
+          "details": "Converted the existing application to .net MVC with Domain Driven Design and SSRS"
+        },
+        {
+          "id": "3c227b0b-3b11-4751-845d-b70cec85b4e6",
+          "details": "The complex business logics were written stored procedures and views in the database in order to optimize the reporting system"
+        },
+        {
+          "id": "b0701d9c-4f5b-4e10-8f5a-30d70c5d12f2",
+          "details": "Conducted extensive testing and debugging to ensure system stability and accuracy of the data processing"
+        },
+        {
+          "id": "c8e68588-a613-47e4-9c13-e3e29dec55a6",
+          "details": "Worked on support to handle the bugs after the system is being deployed."
+        }
+      ],
+      "KeyAchievementHeading": "Key Achievement",
+      "KeyAchievementDetails": [
+        {
+          "id": "e5ca6d91-ca16-4323-918d-fdccd60120b6",
+          "details": "Lead a group of 5 developers in a project in .net MVC undertaking the SDLC of the whole project"
+        },
+        {
+          "id": "99c6999b-11d2-4484-9626-0332bf948ac9",
+          "details": "Had an experience with Web API, and SQLBI for reporting (SSRS)"
+        },
+        {
+          "id": "38e10f3e-dadf-46c1-b2d6-1e041f731044",
+          "details": "Implemented robust and scalable solutions to handle complex health data, workflows, and compliance requirements"
+        },
+        {
+          "id": "3c227b0b-3b11-4751-845d-b70cec85b4e6",
+          "details": "Successfully delivered a comprehensive health case management system within a given time frame and received a positive feedback from clients"
+        }
+      ]
+    }
+  },
+  {
+    "id": "d7b07e13-1a08-4610-a6e8-ce3b1f02ecb0",
+    "title": "Loyalty Program for Retail Shop",
+    "description": "This System is an innovative platform designed to reward and engage loyal customers of the iconic retail brand. This system aims to create a personalized experience for each customer, fostering long-term relationships and driving repeat business.",
+    "url": "https://www.linkedin.cn/incareer/company/spi-software-paradigms-international/",
+    "category": "Web Application",
+    "img": "/images/Software Development.png",
+    "ProjectHeader": {
+      "title": "Loyalty Program for Retail Shop",
+      "publishDate": ["01-2015", "12-2015"],
+      "tags": ["Web Application"]
+    },
+    "ProjectImages": [
+      {
+        "id": "c8e68588-a613-47e4-9c13-e3e29dec55a6",
+        "title": "Loyalty Program for Retail Shop",
+        "img": "/images/Software Development.png"
+      }
+    ],
+    "ProjectInfo": {
+      "ClientHeading": "About Client",
+      "CompanyInfo": [
+        {
+          "id": "b0701d9c-4f5b-4e10-8f5a-30d70c5d12f2",
+          "title": "Kathmandu, Nepal",
+          "isURL": false,
+          "details": "Location"
+        },
+        {
+          "id": "c8e68588-a613-47e4-9c13-e3e29dec55a6",
+          "title": "Software Paradigms International",
+          "isURL": true,
+          "details": "https://www.linkedin.cn/incareer/company/spi-software-paradigms-international/"
+        }
+      ],
+      "Technologies": [
+        {
+          "title": "Tools & Technologies",
+          "techs": [".Net", "MVC", "JavaScript", "MSSQL", "HTML", "knoutjs"]
+        }
+      ],
+      "KeyRoleHeading": "KeyRole",
+      "KeyRoleDetails": [
+        {
+          "id": "e5ca6d91-ca16-4323-918d-fdccd60120b6",
+          "details": "Worked in design documents and technical documents"
+        },
+        {
+          "id": "99c6999b-11d2-4484-9626-0332bf948ac9",
+          "details": "Created different unit test cases in NUnit"
+        },
+        {
+          "id": "38e10f3e-dadf-46c1-b2d6-1e041f731044",
+          "details": "Worked in business layer and data conversion from and DTOs and modules"
+        },
+        {
+          "id": "3c227b0b-3b11-4751-845d-b70cec85b4e6",
+          "details": "Got the understanding of the two way binding javascript library, knockout js"
+        },
+        {
+          "id": "b0701d9c-4f5b-4e10-8f5a-30d70c5d12f2",
+          "details": "Created various client side validation in javascript"
+        }
+      ],
+      "KeyAchievementHeading": "Key Achievement",
+      "KeyAchievementDetails": [
+        {
+          "id": "e5ca6d91-ca16-4323-918d-fdccd60120b6",
+          "details": "Enhance my knowledge in software design pattern and architecture Domain Driven Design)"
+        },
+        {
+          "id": "99c6999b-11d2-4484-9626-0332bf948ac9",
+          "details": "Enhanced my web development skills"
+        },
+        {
+          "id": "38e10f3e-dadf-46c1-b2d6-1e041f731044",
+          "details": "Worked on various documentation like design documents and technical documents"
+        }
+      ]
+    }
+  },
+  {
+    "id": "8660cc7f-5099-48ea-a6a9-8fbebf537926",
+    "title": "Software for Co-operative financial institutions",
+    "description": "This project is a web-based cooperative software designed to manage client savings accounts, track transactions, and generate accurate financial reports including Trial Balance, Balance Sheets, and other key performance indicators",
+    "url": "https://www.linkedin.cn/incareer/company/whitehatengineering",
+    "category": "Web Application",
+    "img": "/images/Software Development.png",
+    "ProjectHeader": {
+      "title": "Co-operative financial institutions",
+      "publishDate": ["03-2014", "01-2015"],
+      "tags": ["FullStack Software Engineer"]
+    },
+    "ProjectImages": [
+      {
+        "id": "e26a7a26-db2a-4827-898e-058026e523cf",
+        "title": "Co-operative financial institutions",
+        "img": "/images/Software Development.png"
+      }
+    ],
+    "ProjectInfo": {
+      "ClientHeading": "TechPointEngineering Solution",
+      "CompanyInfo": [
+        {
+          "id": "b0701d9c-4f5b-4e10-8f5a-30d70c5d12f2",
+          "title": "Kathmandu, Nepal",
+          "isURL": false,
+          "details": "Location"
+        },
+        {
+          "id": "c8e68588-a613-47e4-9c13-e3e29dec55a6",
+          "title": "TechPoint Engineering Solution",
+          "isURL": false,
+          "details": "TechPointEngineering Solution"
+        }
+      ],
+      "Technologies": [
+        {
+          "title": "Tools & Technologies",
+          "techs": ["c#", ".NET", "MVC", "MSSQL", "Stored Procedures"]
+        }
+      ],
+      "KeyRoleHeading": "KeyRole",
+      "KeyRoleDetails": [
+        {
+          "id": "99c6999b-11d2-4484-9626-0332bf948ac9",
+          "details": "Learned the web based structure in Asp Net with user controls and client side validations"
+        },
+        {
+          "id": "38e10f3e-dadf-46c1-b2d6-1e041f731044",
+          "details": "Worked in SQL stored procedures and functions for report generations"
+        },
+        {
+          "id": "c8e68588-a613-47e4-9c13-e3e29dec55a6",
+          "details": "Worked in log maintenance to handle the error and downtime of the project"
+        }
+      ],
+      "KeyAchievementHeading": "Key Achievement",
+      "KeyAchievementDetails": [
+        {
+          "id": "38e10f3e-dadf-46c1-b2d6-1e041f731044",
+          "details": "Enhance web application development with interactive UI in ASP .Net MVC"
+        },
+        {
+          "id": "e5ca6d91-ca16-4323-918d-fdccd60120b6",
+          "details": "Optimize the performance by improving queries in the stored procedures."
+        },
+        {
+          "id": "99c6999b-11d2-4484-9626-0332bf948ac9",
+          "details": "Deployed the Web project with reporting system"
+        }
+      ]
+    }
+  },
+  {
+    "id": "70df87bb-1f3b-4599-85e6-237dd2eadd27",
+    "title": "School Management System with Accounting System",
+    "description": "This system is a WPF-based desktop application that provides an integrated platform for managing school operations, including financial management, inventory control, and student account tracking. It offers a comprehensive solution for schools to streamline their administrative tasks and improve overall efficiency",
+    "url": "https://www.linkedin.cn/incareer/company/whitehatengineering",
+    "category": "Web Application",
+    "img": "/images/Software Development.png",
+    "ProjectHeader": {
+      "title": "School Management System with Accounting System",
+      "publishDate": ["03-2013", "012-2014"],
+      "tags": ["Intern Software Engineer"]
+    },
+    "ProjectImages": [
+      {
+        "id": "e26a7a26-db2a-4827-898e-058026e523cf",
+        "title": "School Management System with Accounting System",
+        "img": "/images/Software Development.png"
+      }
+    ],
+    "ProjectInfo": {
+      "ClientHeading": "GreenApple Pvt,Ltd",
+      "CompanyInfo": [
+        {
+          "id": "b0701d9c-4f5b-4e10-8f5a-30d70c5d12f2",
+          "title": "Kathmandu, Nepal",
+          "isURL": false,
+          "details": "Location"
+        },
+        {
+          "id": "283a2ebc-5be0-4882-8540-6b27b55cdd9f",
+          "title": "GreenApple",
+          "isURL": false,
+          "details": "GreenApple"
+        }
+      ],
+      "Technologies": [
+        {
+          "title": "Tools & Technologies",
+          "techs": ["UNITY", "c#", "API", "Postgres", "GITHUB", "Ollama", "LLM"]
+        }
+      ],
+      "KeyRoleHeading": "KeyRole",
+      "KeyRoleDetails": [
+        {
+          "id": "c8e68588-a613-47e4-9c13-e3e29dec55a6",
+          "details": "Contributed to the development of an error handling mechanism to improve the stability"
+        },
+        {
+          "id": "e5ca6d91-ca16-4323-918d-fdccd60120b6",
+          "details": "Collaborated with seniors to design and implement the software"
+        },
+        {
+          "id": "e26a7a26-db2a-4827-898e-058026e523cf",
+          "details": "Worked in a business layer for an accounting system which included financial reports with paginations"
+        }
+      ],
+      "KeyAchievementHeading": "Key Achievement",
+      "KeyAchievementDetails": [
+        {
+          "id": "38e10f3e-dadf-46c1-b2d6-1e041f731044",
+          "details": "Learned the code structure, architecture in WPF and version control"
+        },
+        {
+          "id": "e5ca6d91-ca16-4323-918d-fdccd60120b6",
+          "details": "Started as an intern and promoted to associate software engineer"
+        },
+        {
+          "id": "99c6999b-11d2-4484-9626-0332bf948ac9",
+          "details": "Implemented a feature of data visualization, enhancing the usability of application"
+        },
+        {
+          "id": "2ed6cdd0-94c5-49cc-a3b8-7e9c4f2ca9af",
+          "details": "Contributed in a successful launch of the software."
+        },
+        {
+          "id": "dfeebd21-e0ec-42ab-92df-f4adac6d2f15",
+          "details": "Enhance programming skills in C# .net"
+        }
+      ]
+    }
+  }
+]

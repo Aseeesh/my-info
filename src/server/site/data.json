@@ -1,0 +1,59 @@
+[
+  {
+    "id": "1f3e8d7c-aa9b-43ad-aeb4-e77c2ca6a0ed",
+    "title": "ashish-rijal - Full-stack Developer",
+    "description": "Portofolio page of ashish-rijal",
+    "applicationName": "ashish-rijal",
+    "headerTitle": "ashish-rijal",
+    "skills": [
+      ".Net",
+      "React",
+      "Angular",
+      "MSSQL",
+      "Postgress",
+      "ReactNavite",
+      "Next.js",
+      "Python",
+      "Jira",
+      "GIT"
+    ],
+    "author": {
+      "name": "Ashsih Rijal",
+      "nickname": "Ashish",
+      "url": "https://github.com/Aseeesh/my-info",
+      "role": "Full-stack Developer",
+      "role_rough_notation": ["full-stack", "developer"],
+      "about": "I am a seasoned and passionate software engineer with over 10 years of experience developing robust, scalable, and efficient software solutions for various industries.My expertise has enabled me to make a meaningful impact in multiple domains, from e-commerce and logistics to education, retail management, healthcare, and finance.\n\nIn addition to my technical skills, I possess excellent problem-solving abilities, strong communication skills, and a collaborative mindset. As a team lead and senior engineer, I have successfully guided teams of developers to deliver projects on time, within budget, and with exceptional quality.",
+      "background": "My professional background is rooted in software development, with experience working on various projects, including restaurant management systems, freight forwarding services, and multi-store systems. As a Sr Software Engineer Team Lead, I coordinated cross-functional teams, implemented scrum methodologies, and created architectures for projects. My proficiency in .NET 6, React, Next JS, ReactNative, Angular, and C# ensures that I can work efficiently with a variety of technologies. Throughout my career, I've developed a broad range of skills that enable me to tackle complex problems, from software design patterns to architecture and web development.",
+      "strengths": [
+        "Strong .NET programming skills",
+        "Experience with ASP.NET MVC,React, Angular,Unity, React Native, and WPF",
+        "Proficient in C# and .NET Core",
+        "Excellent problem-solving abilities",
+        "Strong communication and collaboration skills",
+        "Proven track record of delivering high-quality software solutions on time"
+      ]
+    },
+    "social": {
+      "email": "ashishrijal1@hotmail.com",
+      "github": "https://github.com/Aseeesh",
+      "linkedin": "https://www.linkedin.com/in/ashish-rijal-72a5a474/",
+      "instagram": "https://www.instagram.com/ashish.rijal9/",
+      "threads": "https://www.threads.net/@ashish.rijal9",
+      "devto": "#"
+    },
+    "sourceCode": "https://github.com/Aseeesh/my-info",
+    "keywords": [
+      "Node.js",
+      "React",
+      "Next.js",
+      "Tailwind",
+      "Markdown",
+      "GitHub Pages"
+    ],
+    "outloookURL": "https://outlook.live.com/mail/0/",
+    "language": "en",
+    "theme": "system",
+    "isOpenToWork": true
+  }
+]

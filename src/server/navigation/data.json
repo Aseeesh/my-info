@@ -1,0 +1,22 @@
+[
+  {
+    "id": "1f3e8d7c-aa9b-43ad-aeb4-e77c2ca6a0ed",
+    "href": "/",
+    "title": "Home"
+  },
+  {
+    "id": "5f3e8d7c-aa9b-43ad-aeb4-e77c2ca6a0ed",
+    "href": "/projects",
+    "title": "Projects"
+  },
+  {
+    "id": "8f3e8d7c-aa9b-43ad-aeb4-e77c2ca6a0ed",
+    "href": "/resume",
+    "title": "Resume"
+  },
+  {
+    "id": "3f8d7e3-34b9-4baf-aeb1-c85a2c6a0ed",
+    "href": "/contact",
+    "title": "Contact"
+  }
+]

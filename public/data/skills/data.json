@@ -1,0 +1,70 @@
+[
+  {
+    "name": "JavaScript",
+    "logo": "Si.SiJavascript",
+    "url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript",
+    "id": "8f1e7d3c-aa9b-43ad-aeb4-e77c2ca6a0ed",
+    "children": [
+      {
+        "name": "TypeScript",
+        "logo": "Si.SiTypescript",
+        "url": "https://www.typescriptlang.org",
+        "id": "d5f8d7e3-34b9-4baf-aeb1-c85a2c6a0ed"
+      },
+      {
+        "name": "Node.js",
+        "logo": "Si.SiNodedotjs",
+        "url": "https://nodejs.org/en",
+        "id": "7f3e8d3c-aa9b-43ad-aeb4-e77c2ca6a0ed"
+      },
+      {
+        "name": "Express",
+        "logo": "Si.SiExpress",
+        "url": "https://expressjs.com",
+        "id": "5f1e7d3c-aa9b-43ad-aeb4-e77c2ca6a0ed"
+      },
+      {
+        "name": "ElysiaJS",
+        "logo": "ElysiaJS",
+        "url": "https://elysiajs.com",
+        "id": "3f8d7e3-34b9-4baf-aeb1-c85a2c6a0ed"
+      },
+      {
+        "name": "Nextjs",
+        "logo": "Si.SiNextdotjs",
+        "url": "https://nextjs.org",
+        "id": "f1e7d3c-aa9b-43ad-aeb4-e77c2ca6a0ed"
+      },
+      {
+        "name": "Vue",
+        "logo": "Si.SiVuedotjs",
+        "url": "https://vuejs.org",
+        "id": "1f8d7e3-34b9-4baf-aeb1-c85a2c6a0ed"
+      }
+    ]
+  },
+  {
+    "name": "Database",
+    "logo": "Tb.TbDatabase",
+    "children": [
+      {
+        "name": "mySQL",
+        "logo": "Si.SiMysql",
+        "url": "https://www.mysql.com",
+        "id": "8f3e8d7c-aa9b-43ad-aeb4-e77c2ca6a0ed"
+      },
+      {
+        "name": "PostgreSQL",
+        "logo": "Si.SiPostgresql",
+        "url": "https://www.postgresql.org",
+        "id": "5f3e8d7c-aa9b-43ad-aeb4-e77c2ca6a0ed"
+      }
+    ]
+  },
+  {
+    "name": "Git",
+    "logo": "Si.SiGit",
+    "url": "https://github.com/about",
+    "id": "1f3e8d7c-aa9b-43ad-aeb4-e77c2ca6a0ed"
+  }
+]

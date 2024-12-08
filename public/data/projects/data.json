@@ -1,0 +1,384 @@
+[
+  {
+    "id": "aebd98c2-8e9f-48ac-a3ad-ba4dd7c5a9e6",
+    "title": "Food Cost Management",
+    "description": "This system focuses in restaturant day to day activities, manages inventory and aslo manages shr system",
+    "url": "https://www.linkedin.cn/incareer/company/whitehatengineering",
+    "category": "Web Application",
+    "img": "/images/Software Development.png",
+    "ProjectHeader": {
+      "title": "Food Cost Management",
+      "publishDate": ["03-2023", "12-2023"],
+      "tags": "FullStack Software Engineer"
+    },
+    "ProjectImages": [
+      {
+        "id": "e26a7a26-db2a-4827-898e-058026e523cf",
+        "title": "Food Cost Management",
+        "img": "/images/Software Development.png"
+      }
+    ],
+    "ProjectInfo": {
+      "ClientHeading": "About Client",
+      "CompanyInfo": [
+        {
+          "id": "283a2ebc-5be0-4882-8540-6b27b55cdd9f",
+          "title": "Remote Job",
+          "details": "Remote Job"
+        },
+        {
+          "id": "e26a7a26-db2a-4827-898e-058026e523cf",
+          "title": "WhiteHat Engineering",
+          "details": "WhiteHat Engineering"
+        }
+      ],
+      "Technologies": [
+        {
+          "title": "Tools & Technologies",
+          "techs": [".Net", "MVC", "Angular", "MSSQL", "JIRA", "GITHUB", "AWS"]
+        }
+      ],
+      "KeyRoleHeading": "KeyRole",
+      "KeyRoleDetails": [
+        {
+          "id": "99c6999b-11d2-4484-9626-0332bf948ac9",
+          "details": "Converted the existing .net 2 mvc app to .net 6 and also involved in creating the new module in react"
+        },
+        {
+          "id": "38e10f3e-dadf-46c1-b2d6-1e041f731044",
+          "details": "Converting the existing web services into rest api in nest JS."
+        },
+        {
+          "id": "3c227b0b-3b11-4751-845d-b70cec85b4e6",
+          "details": "Involve in creating a separate new application written in Java and angular"
+        },
+        {
+          "id": "3a355be3-d7cc-4832-828f-465fe25a42b5",
+          "details": "Take responsibility for the given module, communicate with the PM for the requirements and coordinate with the team members to complete the task"
+        },
+        {
+          "id": "9ac8f688-de63-44ff-843b-00133aefa439",
+          "details": "Created architecture for the API in next js"
+        },
+        {
+          "id": "9adbdec4-dd67-44c5-a5c9-90f4154e5bcd",
+          "details": "Worked in Jira and agile methodology and also involved in the code review process"
+        }
+      ],
+      "KeyAchievementHeading": "KeyAchievement",
+      "KeyAchievementDetails": [
+        {
+          "id": "e5ca6d91-ca16-4323-918d-fdccd60120b6",
+          "details": "Experience with EC2 servers, S3 buckets and also used Azure and GIT for CI/CD pipeline"
+        },
+        {
+          "id": "99c6999b-11d2-4484-9626-0332bf948ac9",
+          "details": "Successfully converted the project from old version of .net to the latest .net 6"
+        }
+      ]
+    }
+  },
+  {
+    "id": "b7edc9d3-7e1f-4a95-b8dd-fcd9d5ebf55f",
+    "title": "Trasndoclink Cargo Logistic",
+    "description": "This system is focused on handeling cargo management system with creating invoices, cargo details and location tracking",
+    "url": "https://www.linkedin.cn/incareer/company/usome/",
+    "category": "Web Application",
+    "img": "/images/Software Development.png",
+    "ProjectHeader": {
+      "title": "Trasndoclink Cargo Logistic",
+      "publishDate": ["03-2021", "12-2022"],
+      "tags": "Web Application"
+    },
+    "ProjectImages": [
+      {
+        "id": "c8e68588-a613-47e4-9c13-e3e29dec55a6",
+        "title": "Trasndoclink Cargo Logistic",
+        "img": "/images/Software Development.png"
+      }
+    ],
+    "ProjectInfo": {
+      "ClientHeading": "About Client",
+      "CompanyInfo": [
+        {
+          "id": "b0701d9c-4f5b-4e10-8f5a-30d70c5d12f2",
+          "title": "Remote Job",
+          "details": "Remote Job"
+        },
+        {
+          "id": "c8e68588-a613-47e4-9c13-e3e29dec55a6",
+          "title": "Company Name",
+          "details": "USOME"
+        }
+      ],
+      "Technologies": [
+        {
+          "title": "Tools & Technologies",
+          "techs": [".Net", "MVC", "JavaScript", "MSSQL", "Asure"]
+        }
+      ],
+      "KeyRoleHeading": "KeyRole",
+      "KeyRoleDetails": [
+        {
+          "id": "e5ca6d91-ca16-4323-918d-fdccd60120b6",
+          "details": "Coordinated with business analysts for the project requirements, creating the technical document."
+        },
+        {
+          "id": "99c6999b-11d2-4484-9626-0332bf948ac9",
+          "details": "Communicated with cross-functional teams, including QA, UI/UX, and product management, to ensure smooth project execution"
+        },
+        {
+          "id": "38e10f3e-dadf-46c1-b2d6-1e041f731044",
+          "details": "Implemented scrum, to enhance teamʼs productivity and efficiency"
+        },
+        {
+          "id": "3c227b0b-3b11-4751-845d-b70cec85b4e6",
+          "details": "Created architecture for the project and helped team members to resolve the task and also involved in the code review process"
+        }
+      ],
+      "KeyAchievementHeading": "KeyAchievement",
+      "KeyAchievementDetails": [
+        {
+          "id": "e5ca6d91-ca16-4323-918d-fdccd60120b6",
+          "details": "As a team lead, maintained the communication channel among the team members and to develop software for cargo logistics"
+        },
+        {
+          "id": "99c6999b-11d2-4484-9626-0332bf948ac9",
+          "details": "Implemented the Azure for kanban board and CI/CD pipeline for the smooth deployment process."
+        }
+      ]
+    }
+  },
+  {
+    "id": "e5ca6d91-ca16-4323-918d-fdccd60120b6",
+    "title": "Software for Multi Store Ecommerce ",
+    "description": "This system is designed for multi store ecommerce system. It includes both a dashboard to handle merchant's account and inventories and a mobile app for consumer with multi store ecommerce app ",
+    "url": "#",
+    "category": "Web Application/Mobile Application",
+    "img": "/images/Software Development.png",
+    "ProjectHeader": {
+      "title": "Multi Store Ecommerce",
+      "publishDate": ["03-2020", "12-2021"],
+      "tags": "Web Application/Mobile Application"
+    },
+    "ProjectImages": [
+      {
+        "id": "c8e68588-a613-47e4-9c13-e3e29dec55a6",
+        "title": "Multi Store Ecommerce",
+        "img": "/images/Software Development.png"
+      }
+    ],
+    "ProjectInfo": {
+      "ClientHeading": "About Client",
+      "CompanyInfo": [
+        {
+          "id": "b0701d9c-4f5b-4e10-8f5a-30d70c5d12f2",
+          "title": "Remote Job",
+          "details": "Remote Job"
+        }
+      ],
+      "Technologies": [
+        {
+          "title": "Tools & Technologies",
+          "techs": [".Net", "API", "Angular", "MSSQL", "React-Native", "NGRX"]
+        }
+      ],
+      "KeyRoleHeading": "KeyRole",
+      "KeyRoleDetails": [
+        {
+          "id": "e5ca6d91-ca16-4323-918d-fdccd60120b6",
+          "details": "Created a mobile app with redux to handle the state management and sagas to handle the api calls"
+        },
+        {
+          "id": "99c6999b-11d2-4484-9626-0332bf948ac9",
+          "details": "Design and develop the interactive interfaces such as user login, registration, cart, scrollable list, QRcode generation and read the data for QR scan."
+        },
+        {
+          "id": "38e10f3e-dadf-46c1-b2d6-1e041f731044",
+          "details": "Worked in API which was written in to process the data from the mobile app."
+        }
+      ],
+      "KeyAchievementHeading": "KeyAchievement",
+      "KeyAchievementDetails": [
+        {
+          "id": "e5ca6d91-ca16-4323-918d-fdccd60120b6",
+          "details": "Added a new module to the existing .net MVC web application which was developed in angular 9 and incorporated as an iframe"
+        },
+        {
+          "id": "99c6999b-11d2-4484-9626-0332bf948ac9",
+          "details": "Worked in new technology, mobile app development in react native and .net core 2.0."
+        },
+        {
+          "id": "3c227b0b-3b11-4751-845d-b70cec85b4e6",
+          "details": "Enhanced the knowledge of state management and implemented the redux structure in mobile application and NGRX in Angular project"
+        }
+      ]
+    }
+  },
+  {
+    "id": "c8e68588-a613-47e4-9c13-e3e29dec55a6",
+    "title": "GBcare Case Management System",
+    "description": "This system is focused on handeling medical assistance for nurse related to health insurance",
+    "url": "https://www.linkedin.cn/incareer/company/spiralogics-inc./",
+    "category": "Web Application",
+    "img": "/images/Software Development.png",
+    "ProjectHeader": {
+      "title": "GBcare Case Management System",
+      "publishDate": ["03-2016", "12-2019"],
+      "tags": "Web Application"
+    },
+    "ProjectImages": [
+      {
+        "id": "c8e68588-a613-47e4-9c13-e3e29dec55a6",
+        "title": "GBcare Case Management System",
+        "img": "/images/Software Development.png"
+      }
+    ],
+    "ProjectInfo": {
+      "ClientHeading": "About Client",
+      "CompanyInfo": [
+        {
+          "id": "b0701d9c-4f5b-4e10-8f5a-30d70c5d12f2",
+          "title": "Location",
+          "details": "Kathmandu, Nepal"
+        },
+        {
+          "id": "c8e68588-a613-47e4-9c13-e3e29dec55a6",
+          "title": "Company Name",
+          "details": "Spiralogics"
+        }
+      ],
+      "Technologies": [
+        {
+          "title": "Tools & Technologies",
+          "techs": [".Net", "MVC", "JavaScript", "MSSQL", "Asure"]
+        }
+      ],
+      "KeyRoleHeading": "KeyRole",
+      "KeyRoleDetails": [
+        {
+          "id": "e5ca6d91-ca16-4323-918d-fdccd60120b6",
+          "details": "Worked as a Team lead, had to coordinate with business analysts for the requirement and create the task among the team members."
+        },
+        {
+          "id": "99c6999b-11d2-4484-9626-0332bf948ac9",
+          "details": "Involved in helping the team members and reviewing their code in order to maintain the code structure"
+        },
+        {
+          "id": "38e10f3e-dadf-46c1-b2d6-1e041f731044",
+          "details": "Converted the existing application to .net MVC with Domain Driven Design and SSRS"
+        },
+        {
+          "id": "3c227b0b-3b11-4751-845d-b70cec85b4e6",
+          "details": "The complex business logics were written stored procedures and views in the database in order to optimize the reporting system"
+        },
+        {
+          "id": "b0701d9c-4f5b-4e10-8f5a-30d70c5d12f2",
+          "details": "Conducted extensive testing and debugging to ensure system stability and accuracy of the data processing"
+        },
+        {
+          "id": "c8e68588-a613-47e4-9c13-e3e29dec55a6",
+          "details": "Worked on support to handle the bugs after the system is being deployed."
+        }
+      ],
+      "KeyAchievementHeading": "KeyAchievement",
+      "KeyAchievementDetails": [
+        {
+          "id": "e5ca6d91-ca16-4323-918d-fdccd60120b6",
+          "details": "Lead a group of 5 developers in a project in .net MVC undertaking the SDLC of the whole project"
+        },
+        {
+          "id": "99c6999b-11d2-4484-9626-0332bf948ac9",
+          "details": "Had an experience with Web API, and SQLBI for reporting (SSRS)"
+        },
+        {
+          "id": "38e10f3e-dadf-46c1-b2d6-1e041f731044",
+          "details": "Implemented robust and scalable solutions to handle complex health data, workflows, and compliance requirements"
+        },
+        {
+          "id": "3c227b0b-3b11-4751-845d-b70cec85b4e6",
+          "details": "Successfully delivered a comprehensive health case management system within a given time frame and received a positive feedback from clients"
+        }
+      ]
+    }
+  },
+  {
+    "id": "c8e68588-a613-47e4-9c13-1e041f731044",
+    "title": "Loyalty Program for Retail Shop",
+    "description": "This system is created to design loyalty program for retail shop named Macys",
+    "url": "https://www.linkedin.cn/incareer/company/spi-software-paradigms-international/",
+    "category": "Web Application",
+    "img": "/images/Software Development.png",
+    "ProjectHeader": {
+      "title": "Loyalty Program for Retail Shop",
+      "publishDate": ["01-2015", "12-2015"],
+      "tags": "Web Application"
+    },
+    "ProjectImages": [
+      {
+        "id": "c8e68588-a613-47e4-9c13-e3e29dec55a6",
+        "title": "Loyalty Program for Retail Shop",
+        "img": "/images/Software Development.png"
+      }
+    ],
+    "ProjectInfo": {
+      "ClientHeading": "About Client",
+      "CompanyInfo": [
+        {
+          "id": "b0701d9c-4f5b-4e10-8f5a-30d70c5d12f2",
+          "title": "Location",
+          "details": "Kathmandu, Nepal"
+        },
+        {
+          "id": "c8e68588-a613-47e4-9c13-e3e29dec55a6",
+          "title": "Company Name",
+          "details": "Software Paradigms International"
+        }
+      ],
+      "Technologies": [
+        {
+          "title": "Tools & Technologies",
+          "techs": [".Net", "MVC", "JavaScript", "MSSQL", "HTML", "knoutjs"]
+        }
+      ],
+      "KeyRoleHeading": "KeyRole",
+      "KeyRoleDetails": [
+        {
+          "id": "e5ca6d91-ca16-4323-918d-fdccd60120b6",
+          "details": "Worked in design documents and technical documents"
+        },
+        {
+          "id": "99c6999b-11d2-4484-9626-0332bf948ac9",
+          "details": "Created different unit test cases in NUnit"
+        },
+        {
+          "id": "38e10f3e-dadf-46c1-b2d6-1e041f731044",
+          "details": "Worked in business layer and data conversion from and DTOs and modules"
+        },
+        {
+          "id": "3c227b0b-3b11-4751-845d-b70cec85b4e6",
+          "details": "Got the understanding of the two way binding javascript library, knockout js"
+        },
+        {
+          "id": "b0701d9c-4f5b-4e10-8f5a-30d70c5d12f2",
+          "details": "Created various client side validation in javascript"
+        }
+      ],
+      "KeyAchievementHeading": "KeyAchievement",
+      "KeyAchievementDetails": [
+        {
+          "id": "e5ca6d91-ca16-4323-918d-fdccd60120b6",
+          "details": "Enhance my knowledge in software design pattern and architecture Domain Driven Design)"
+        },
+        {
+          "id": "99c6999b-11d2-4484-9626-0332bf948ac9",
+          "details": "Enhanced my web development skills"
+        },
+        {
+          "id": "38e10f3e-dadf-46c1-b2d6-1e041f731044",
+          "details": "Worked on various documentation like design documents and technical documents"
+        }
+      ]
+    }
+  }
+]
