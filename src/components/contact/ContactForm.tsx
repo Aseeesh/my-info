@@ -3,6 +3,7 @@ import React from "react";
 import { useForm, SubmitHandler } from "react-hook-form";
 import emailjs from "@emailjs/browser";
 import { Input } from "../reusable/input";
+import { useRouter } from "next/navigation";
 
 type FormData = {
   email: string;
@@ -11,6 +12,7 @@ type FormData = {
 };
 
 export default function ContactForm() {
+  const router = useRouter();
   const {
     register,
     handleSubmit,
@@ -35,9 +37,10 @@ export default function ContactForm() {
         "chjmFvwc3q4ziNXvo", // Replace with your EmailJS user ID
       );
       alert("Email sent successfully!");
+      router.push("/");
     } catch (error) {
-      console.error("Failed to send email:", error);
       alert("There was an error sending the email.");
+      router.push("/");
     }
   };
 
