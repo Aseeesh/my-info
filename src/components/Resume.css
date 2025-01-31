@@ -40,9 +40,6 @@
   background: #f43f5e; /* Tailwind rose-50 */
   box-shadow: 0 2px 10px #f43f5e; /* Tailwind rose-50 */
 }
-.py-5 {
-  /* max-width: 400px; */
-}
 
 .card {
   width: calc(100% - 16px);
