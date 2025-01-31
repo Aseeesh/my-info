@@ -38,7 +38,7 @@ export default function ContactForm() {
       );
       alert("Email sent successfully!");
       router.push("/");
-    } catch (error) {
+    } catch {
       alert("There was an error sending the email.");
       router.push("/");
     }
