@@ -70,7 +70,7 @@ export default function Footer() {
           </div>
         </div>
 
-        <div className="mb-8 flex justify-center text-center text-sm">
+        {/* <div className="mb-8 flex justify-center text-center text-sm">
           <Link
             href={siteInfo[0].sourceCode}
             target="_blank"
@@ -79,7 +79,7 @@ export default function Footer() {
           >
             <span>View source</span>
           </Link>
-        </div>
+        </div> */}
       </footer>
     )
   );
