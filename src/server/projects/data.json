@@ -74,8 +74,8 @@
   },
   {
     "id": "09eb1c6d-70d4-429e-9b80-92b2c3abf8c4",
-    "title": "Game Development",
-    "description": "This project is a classic casino game using Unity, integrating AI-powered NPCs with interactive dialogues generated through Large Language Models (LLMs) to create a unique player experience. The result was a revamped game that combines gameplay with cutting-edge conversational capabilities.",
+    "title": "Admin Template Game System",
+    "description": "This project involved building a dashboard for a web game, enhanced with interactive dialogues to deliver a unique and immersive player experience. The final product merged timeless casino gameplay with modern conversational interactivity and seamless web-based management tools.",
     "url": "https://www.linkedin.cn/incareer/company/whitehatengineering",
     "category": "Web Application",
     "img": "/images/Software Development.png",
@@ -117,38 +117,38 @@
       "KeyRoleDetails": [
         {
           "id": "99c6999b-11d2-4484-9626-0332bf948ac9",
-          "details": "Integrated a Large Language Model to power NPC behaviors, decision-making, and interactive dialogues"
+          "details": "Developed and maintained a full-featured CMS admin dashboard using Next.js, React, and Tailwind CSS, enabling real-time content management and user analytics."
         },
         {
           "id": "38e10f3e-dadf-46c1-b2d6-1e041f731044",
-          "details": "Worked in Implementing core gameplay mechanics"
+          "details": "Designed and implemented RESTful APIs and backend services using C# and .NET 9, including core systems for player authentication, data persistence, and real-time game interactions"
         },
         {
           "id": "c8e68588-a613-47e4-9c13-e3e29dec55a6",
-          "details": "Integrating the game with server-side logic for features like player authentication, data storage, and real-time interactions"
+          "details": "Integrated Stripe payment processing for secure in-game transactions and subscription models."
         },
         {
           "id": "e5ca6d91-ca16-4323-918d-fdccd60120b6",
-          "details": "Designing user interfaces that are intuitive, user-friendly, and aesthetically pleasing"
+          "details": "Collaborated closely with designers, artists, and other developers to ensure a cohesive and engaging game experience."
         },
         {
           "id": "e26a7a26-db2a-4827-898e-058026e523cf",
-          "details": "Working effectively with artists, designers, and programmers to ensure a cohesive game experience"
+          "details": "Created intuitive and responsive UI/UX for both player interfaces and administrative tools."
         }
       ],
       "KeyAchievementHeading": "Key Achievement",
       "KeyAchievementDetails": [
         {
           "id": "38e10f3e-dadf-46c1-b2d6-1e041f731044",
-          "details": "Quickly adapted to Unity's game development environment, learning C# scripting, asset management, and scene design within a short timeframe"
+          "details": "Rapidly adapted to the game engine’s architecture and tooling, mastering scene management, dialogue systems, and asset integration."
         },
         {
           "id": "e5ca6d91-ca16-4323-918d-fdccd60120b6",
-          "details": "Successfully integrated a Large Language Model LLM to power NPC decision-making and interactions"
+          "details": "Streamlined server-side logic and frontend API integration, significantly improving system performance and reducing load times."
         },
         {
           "id": "99c6999b-11d2-4484-9626-0332bf948ac9",
-          "details": "Streamlined game logic and API integration, ensuring smooth performance"
+          "details": "Delivered a scalable, maintainable, and user-friendly admin platform that empowered non-technical stakeholders to manage game content and user engagement efficiently."
         }
       ]
     }
@@ -559,7 +559,7 @@
     "img": "/images/Software Development.png",
     "ProjectHeader": {
       "title": "Co-operative financial institutions",
-      "publishDate": ["03-2014", "01-2015"],
+      "publishDate": ["03-2013", "12-2014"],
       "tags": ["FullStack Software Engineer"]
     },
     "ProjectImages": [
@@ -570,7 +570,7 @@
       }
     ],
     "ProjectInfo": {
-      "ClientHeading": "TechPointEngineering Solution",
+      "ClientHeading": "GreenApple Pvt,Ltd",
       "CompanyInfo": [
         {
           "id": "b0701d9c-4f5b-4e10-8f5a-30d70c5d12f2",
@@ -580,9 +580,9 @@
         },
         {
           "id": "c8e68588-a613-47e4-9c13-e3e29dec55a6",
-          "title": "TechPoint Engineering Solution",
+          "title": "GreenApple Pvt,Ltd",
           "isURL": false,
-          "details": "TechPointEngineering Solution"
+          "details": "GreenApple Pvt,Ltd"
         }
       ],
       "Technologies": [
@@ -632,7 +632,7 @@
     "img": "/images/Software Development.png",
     "ProjectHeader": {
       "title": "School Management System with Accounting System",
-      "publishDate": ["03-2013", "012-2014"],
+      "publishDate": ["03-2013", "12-2014"],
       "tags": ["Intern Software Engineer"]
     },
     "ProjectImages": [
