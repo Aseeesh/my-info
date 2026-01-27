@@ -1,5 +1,94 @@
 [
   {
+    "id": "09eb1c6d-70d4-429e-9b80-92b2c3abf8c4",
+    "title": "Game development with its Admin panel ",
+    "description": "This project involved the end-to-end design, development, and deployment of a cross-platform casino-style game with an integrated administrative dashboard. The game was built for Android, iOS, and Web platforms, followed by the creation of a comprehensive CMS to manage game content, users, and transactions.",
+    "url": "https://www.linkedin.cn/incareer/company/whitehatengineering",
+    "category": "Web Application/Mobile Application",
+    "img": "/images/Software Development.png",
+    "ProjectHeader": {
+      "title": "Game development with its Admin panel",
+      "publishDate": ["01-2024", "04-2025"],
+      "tags": ["Senior Software Engineer"]
+    },
+    "ProjectImages": [
+      {
+        "id": "e26a7a26-db2a-4827-898e-058026e523cf",
+        "title": "Game development with its Admin panel",
+        "img": "/images/Software Development.png"
+      }
+    ],
+    "ProjectInfo": {
+      "ClientHeading": "Devwals",
+      "CompanyInfo": [
+        {
+          "id": "283a2ebc-5be0-4882-8540-6b27b55cdd9f",
+          "title": "Remote Job",
+          "isURL": false,
+          "details": "Location"
+        },
+        {
+          "id": "e26a7a26-db2a-4827-898e-058026e523cf",
+          "title": "Senior Software Engineer",
+          "isURL": false,
+          "details": "Senior Software Engineer"
+        }
+      ],
+      "Technologies": [
+        {
+          "title": "Tools & Technologies",
+          "techs": ["UNITY", "c#", "API", "Postgres", "GITHUB"]
+        }
+      ],
+      "KeyRoleHeading": "KeyRole",
+      "KeyRoleDetails": [
+        {
+          "id": "99c6999b-11d2-4484-9626-0332bf948ac9",
+          "details": "Designed, coded, tested, and deployed a Unity-based game for Android, iOS, and Web platforms, including a main game and six mini-games."
+        },
+        {
+          "id": "38e10f3e-dadf-46c1-b2d6-1e041f731044",
+          "details": "Ensured cross-platform functionality and performance optimization across all target devices."
+        },
+        {
+          "id": "c8e68588-a613-47e4-9c13-e3e29dec55a6",
+          "details": "Delivered a fully functional game prototype, followed by the complete game suite, and provided post-deployment maintenance for three months"
+        },
+        {
+          "id": "e5ca6d91-ca16-4323-918d-fdccd60120b6",
+          "details": "Handled source code and documentation delivery after each development phase."
+        },
+        {
+          "id": "e26a7a26-db2a-4827-898e-058026e523cf",
+          "details": "Developed and maintained a full-featured CMS admin dashboard using React and Next.js with Tailwind CSS, enabling real-time content management, user analytics, and game oversight."
+        },
+        {
+          "id": "c4e92d7b-3a81-42f8-bf6a-5c3f7d1b8942",
+          "details": "Built RESTful APIs and backend services using C# and .NET to support player authentication, data persistence, and real-time interactions."
+        },
+        {
+          "id": "7a3f9d21-6b4c-48e3-a2e5-9c8b2f1e0674",
+          "details": "Integrated Stripe for secure in-game payments and subscription handling."
+        },
+        {
+          "id": "d5a8b1e3-92c7-4f6d-a3b4-6e9f2c7d1089",
+          "details": "Created an intuitive and responsive UI/UX for administrative tools, empowering non-technical stakeholders to manage game content efficiently. "
+        }
+      ],
+      "KeyAchievementHeading": "Key Achievement",
+      "KeyAchievementDetails": [
+        {
+          "id": "38e10f3e-dadf-46c1-b2d6-1e041f731044",
+          "details": "Successfully delivered the project in clear, structured phases—from game prototype to full deployment and maintenance, followed by a scalable admin dashboard—meeting all approval gates and functionality requirements"
+        },
+        {
+          "id": "e5ca6d91-ca16-4323-918d-fdccd60120b6",
+          "details": "Delivered a maintainable and user-friendly admin platform that enabled efficient content and user management post-launch."
+        }
+      ]
+    }
+  },
+  {
     "id": "22ffaa31-647c-4b9a-b198-325e6abf9848",
     "title": "My Profile",
     "description": "This is my Portfolio Website, where I provide a brief introduction about myself, highlight my professional experiences, and share my contact details. Additionally, there is a form that allows anyone to send me a message directly via email.",
@@ -72,87 +161,7 @@
       ]
     }
   },
-  {
-    "id": "09eb1c6d-70d4-429e-9b80-92b2c3abf8c4",
-    "title": "Admin Template Game System",
-    "description": "This project involved building a dashboard for a web game, enhanced with interactive dialogues to deliver a unique and immersive player experience. The final product merged timeless casino gameplay with modern conversational interactivity and seamless web-based management tools.",
-    "url": "https://www.linkedin.cn/incareer/company/whitehatengineering",
-    "category": "Web Application",
-    "img": "/images/Software Development.png",
-    "ProjectHeader": {
-      "title": "Game Development",
-      "publishDate": ["01-2024", "Present"],
-      "tags": ["FullStack Software Engineer"]
-    },
-    "ProjectImages": [
-      {
-        "id": "e26a7a26-db2a-4827-898e-058026e523cf",
-        "title": "Game Development",
-        "img": "/images/Software Development.png"
-      }
-    ],
-    "ProjectInfo": {
-      "ClientHeading": "Freelancer",
-      "CompanyInfo": [
-        {
-          "id": "283a2ebc-5be0-4882-8540-6b27b55cdd9f",
-          "title": "Remote Job",
-          "isURL": false,
-          "details": "Location"
-        },
-        {
-          "id": "e26a7a26-db2a-4827-898e-058026e523cf",
-          "title": "FreeLancing",
-          "isURL": false,
-          "details": "FreeLancing"
-        }
-      ],
-      "Technologies": [
-        {
-          "title": "Tools & Technologies",
-          "techs": ["UNITY", "c#", "API", "Postgres", "GITHUB", "Ollama", "LLM"]
-        }
-      ],
-      "KeyRoleHeading": "KeyRole",
-      "KeyRoleDetails": [
-        {
-          "id": "99c6999b-11d2-4484-9626-0332bf948ac9",
-          "details": "Developed and maintained a full-featured CMS admin dashboard using Next.js, React, and Tailwind CSS, enabling real-time content management and user analytics."
-        },
-        {
-          "id": "38e10f3e-dadf-46c1-b2d6-1e041f731044",
-          "details": "Designed and implemented RESTful APIs and backend services using C# and .NET 9, including core systems for player authentication, data persistence, and real-time game interactions"
-        },
-        {
-          "id": "c8e68588-a613-47e4-9c13-e3e29dec55a6",
-          "details": "Integrated Stripe payment processing for secure in-game transactions and subscription models."
-        },
-        {
-          "id": "e5ca6d91-ca16-4323-918d-fdccd60120b6",
-          "details": "Collaborated closely with designers, artists, and other developers to ensure a cohesive and engaging game experience."
-        },
-        {
-          "id": "e26a7a26-db2a-4827-898e-058026e523cf",
-          "details": "Created intuitive and responsive UI/UX for both player interfaces and administrative tools."
-        }
-      ],
-      "KeyAchievementHeading": "Key Achievement",
-      "KeyAchievementDetails": [
-        {
-          "id": "38e10f3e-dadf-46c1-b2d6-1e041f731044",
-          "details": "Rapidly adapted to the game engine’s architecture and tooling, mastering scene management, dialogue systems, and asset integration."
-        },
-        {
-          "id": "e5ca6d91-ca16-4323-918d-fdccd60120b6",
-          "details": "Streamlined server-side logic and frontend API integration, significantly improving system performance and reducing load times."
-        },
-        {
-          "id": "99c6999b-11d2-4484-9626-0332bf948ac9",
-          "details": "Delivered a scalable, maintainable, and user-friendly admin platform that empowered non-technical stakeholders to manage game content and user engagement efficiently."
-        }
-      ]
-    }
-  },
+
   {
     "id": "137aee88-bfd7-4054-a78c-8d6ce6d46e1e",
     "title": "Food Cost Management",
@@ -309,14 +318,85 @@
   },
   {
     "id": "7b1498d2-ab98-4840-9b7f-0973efaf900c",
-    "title": "Software for Multi Store Ecommerce ",
-    "description": "This system is tailored to meet the demands of a multi-store e-commerce platform, seamlessly integrating merchant management tools with an intuitive dashboard to track accounts and inventory. For consumers, we offer a user-friendly mobile application that provides an immersive shopping experience across multiple stores. This cohesive solution aims to streamline operations, enhance customer engagement, and drive business growth for merchants in a diverse retail landscape.",
+    "title": "Multi-Vendor E-commerce & Logistics Platform",
+    "description": "Developed a comprehensive multi-vendor e-commerce and logistics platform enabling local businesses to manage online storefronts, inventory, payments, and order fulfillment through a centralized admin dashboard and mobile applications. The system supports super-admin oversight, individual shopkeeper dashboards, real-time parcel tracking, and in-app chat between customers and vendors—delivering a full-cycle retail and restaurant management MVP",
     "url": "#",
     "category": "Web Application/Mobile Application",
     "img": "/images/Software Development.png",
     "ProjectHeader": {
       "title": "Multi Store Ecommerce",
-      "publishDate": ["03-2020", "12-2021"],
+      "publishDate": ["03-2020", "12-2020"],
+      "tags": ["Web Application,Mobile Application"]
+    },
+    "ProjectImages": [
+      {
+        "id": "c8e68588-a613-47e4-9c13-e3e29dec55a6",
+        "title": "Multi Store Ecommerce",
+        "img": "/images/Software Development.png"
+      }
+    ],
+    "ProjectInfo": {
+      "ClientHeading": "About Client",
+      "CompanyInfo": [
+        {
+          "id": "b0701d9c-4f5b-4e10-8f5a-30d70c5d12f2",
+          "title": "Research",
+          "isURL": false,
+          "details": "Location"
+        }
+      ],
+      "Technologies": [
+        {
+          "title": "Tools & Technologies",
+          "techs": [".Net", "API", "Angular", "MSSQL", "React-Native", "NGRX"]
+        }
+      ],
+      "KeyRoleHeading": "KeyRole",
+      "KeyRoleDetails": [
+        {
+          "id": "e5ca6d91-ca16-4323-918d-fdccd60120b6",
+          "details": "Architected and built an Angular admin dashboard with NGRX for state management, allowing super-admins and shopkeepers to onboard, customize stores, manage inventory, track logistics, and view payment analytics"
+        },
+        {
+          "id": "99c6999b-11d2-4484-9626-0332bf948ac9",
+          "details": "Developed two React Native mobile apps (consumer e-commerce and rider logistics) using Redux for state consistency, featuring real-time geo-tracking, multi-vendor shopping, and chat functionality."
+        },
+        {
+          "id": "38e10f3e-dadf-46c1-b2d6-1e041f731044",
+          "details": "Designed and implemented .NET Core APIs to handle mobile app data, vendor/order processing, real-time notifications, and integration with mapping and payment services."
+        },
+        {
+          "id": "c4e92d7b-3a81-42f8-bf6a-5c3f7d1b8942",
+          "details": "Collaborated on system architecture and database design to support multi-tenancy, scalable vendor management, and seamless order-to-delivery workflows."
+        }
+      ],
+      "KeyAchievementHeading": "Key Achievement",
+      "KeyAchievementDetails": [
+        {
+          "id": "e5ca6d91-ca16-4323-918d-fdccd60120b6",
+          "details": "Successfully launched a working multi-store MVP within deadline, integrating web (Angular), mobile (React Native), and backend (.NET Core) into a unified platform."
+        },
+        {
+          "id": "99c6999b-11d2-4484-9626-0332bf948ac9",
+          "details": "Implemented scalable state management using Redux in React Native apps and NGRX in Angular, ensuring consistent data flow and real-time UI updates across vendor dashboards and mobile interfaces."
+        },
+        {
+          "id": "3c227b0b-3b11-4751-845d-b70cec85b4e6",
+          "details": "Enabled real-time parcel tracking and chat—key differentiators that improved customer engagement and operational transparency for small business vendors."
+        }
+      ]
+    }
+  },
+  {
+    "id": "d5a8b1e3-92c7-4f6d-a3b4-6e9f2c7d1089",
+    "title": "Software for Multi-Store System",
+    "description": "Mobile Application Development that enables store staff to generate and print QR-based price tags for products using a centralized system, and scan those tags via a mobile application to instantly retrieve detailed product information, reducing manual entry errors and improving inventory tracking accuracy MVP",
+    "url": "#",
+    "category": "Web Application/Mobile Application",
+    "img": "/images/Software Development.png",
+    "ProjectHeader": {
+      "title": "Multi Store Ecommerce",
+      "publishDate": ["01-2019", "08-2019"],
       "tags": ["Web Application,Mobile Application"]
     },
     "ProjectImages": [
@@ -336,10 +416,10 @@
           "details": "Location"
         },
         {
-          "id": "e26a7a26-db2a-4827-898e-058026e523cf",
-          "title": "FreeLancing",
-          "isURL": false,
-          "details": "FreeLancing"
+          "id": "c8e68588-a613-47e4-9c13-e3e29dec55a6",
+          "title": "Aerion Technologies",
+          "isURL": true,
+          "details": "https://www.linkedin.com/company/aerion-technologies/"
         }
       ],
       "Technologies": [
@@ -352,34 +432,27 @@
       "KeyRoleDetails": [
         {
           "id": "e5ca6d91-ca16-4323-918d-fdccd60120b6",
-          "details": "Created a mobile app with redux to handle the state management and sagas to handle the api calls"
+          "details": "Worked on APIs to handle product data management, QR generation, and real-time inventory updates between the mobile app and the backend system."
         },
         {
           "id": "99c6999b-11d2-4484-9626-0332bf948ac9",
-          "details": "Design and develop the interactive interfaces such as user login, registration, cart, scrollable list, QRcode generation and read the data for QR scan."
-        },
-        {
-          "id": "38e10f3e-dadf-46c1-b2d6-1e041f731044",
-          "details": "Worked in API which was written in to process the data from the mobile app."
+          "details": "scan product labels, view product details (pricing, stock levels, supplier info), and update inventory status directly from the app."
         }
       ],
       "KeyAchievementHeading": "Key Achievement",
       "KeyAchievementDetails": [
         {
           "id": "e5ca6d91-ca16-4323-918d-fdccd60120b6",
-          "details": "Added a new module to the existing .net MVC web application which was developed in angular 9 and incorporated as an iframe"
+          "details": "Delivered MVP, from QR tag printing to mobile scanning and real-time data synchronization."
         },
         {
           "id": "99c6999b-11d2-4484-9626-0332bf948ac9",
-          "details": "Worked in new technology, mobile app development in react native and .net core 2.0."
-        },
-        {
-          "id": "3c227b0b-3b11-4751-845d-b70cec85b4e6",
-          "details": "Enhanced the knowledge of state management and implemented the redux structure in mobile application and NGRX in Angular project"
+          "details": "Successfully integrated third-party QR libraries and print services into the system, enabling seamless label generation and offline-capable mobile scanning for store environments"
         }
       ]
     }
   },
+
   {
     "id": "cd1773b9-e9ff-46f8-a6bf-9c3372a8d941",
     "title": "GBcare Case Management System",

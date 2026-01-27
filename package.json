@@ -26,11 +26,11 @@
   },
   "homepage": "https://github.com/Aseeesh/my-info#readme",
   "scripts": {
-    "dev": "next dev",
-    "dev:secure": "next dev --experimental-https",
+    "dev": "next dev -p 3001",
+    "dev:secure": "next dev --experimental-https -p 3001",
     "build:image": "next-image-export-optimizer",
-    "build": " tsc --noEmit && eslint . && next build && pnpm run build:image",
-    "start": "next start",
+    "build": "tsc --noEmit && eslint . && next build && pnpm run build:image",
+    "start": "next start -p 3001",
     "lint": "next lint",
     "format": "prettier --write ."
   },

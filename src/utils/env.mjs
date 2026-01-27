@@ -4,7 +4,7 @@ export const envSchema = z.object({
   NODE_ENV: z
     .enum(["development", "production"])
     .transform((value) => value || "production"),
-  APP_URL: z.string().transform((value) => value || "https://localhost:3000"),
+  APP_URL: z.string().transform((value) => value || "https://localhost:3009"),
   NEXT_PUBLIC_GOOGLE_ANALYTICS_ID: z.string(),
 
   nextImageExportOptimizer_imageFolderPath: z
