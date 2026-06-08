@@ -52,6 +52,9 @@ jobs:
       - name: Install dependencies
         run: pnpm install --no-frozen-lockfile=false
 
+      - name: Fix sharp binary (CI-safe)
+        run: npm install sharp --platform=linux --arch=x64
+
       # ✅ Prevent Jekyll processing
       - name: Create .nojekyll file
         run: |
