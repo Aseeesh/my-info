@@ -27,24 +27,24 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
 
-      # ✅ Use stable Node version (match .npmrc)
+      # ✅ Install pnpm FIRST (fixes your error)
+      - name: Setup pnpm
+        uses: pnpm/action-setup@v4
+        with:
+          version: 9
+
+      # ✅ Then setup Node + caching
       - name: Setup Node.js
         uses: actions/setup-node@v4
         with:
           node-version: 22
           cache: "pnpm"
 
-      # ✅ Proper pnpm setup (fixes your error)
-      - name: Setup pnpm
-        uses: pnpm/action-setup@v4
-        with:
-          version: 9
-
       # ✅ Install dependencies
       - name: Install dependencies
         run: pnpm install --no-frozen-lockfile
 
-      # ✅ Ensure GitHub Pages works (no Jekyll processing)
+      # ✅ Prevent Jekyll processing
       - name: Create .nojekyll file
         run: |
           mkdir -p public
@@ -54,7 +54,7 @@ jobs:
       - name: Build with Next.js
         run: pnpm run build
 
-      # ✅ Verify export exists
+      # ✅ Validate output
       - name: Check build output
         run: |
           if [ -d "./out" ] && [ "$(ls -A ./out)" ]; then
