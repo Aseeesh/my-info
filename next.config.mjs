@@ -18,9 +18,10 @@ const nextConfig = {
   distDir: "out",
   trailingSlash: true,
   reactStrictMode: true,
+  skipTrailingSlashRedirect: true,
+  skipMiddlewareUrlNormalize: true,
   transpilePackages: ["next-image-export-optimizer"],
 
-  // Temporarily disable these to fix build
   typescript: {
     ignoreBuildErrors: true,
   },
