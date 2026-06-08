@@ -27,19 +27,19 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
 
-      # ✅ Install pnpm (no issues here)
+      # ✅ Setup pnpm correctly
       - name: Setup pnpm
         uses: pnpm/action-setup@v4
         with:
           version: 9
 
-      # ❌ DO NOT use cache: pnpm (this causes your error)
+      # ✅ Setup Node (NO pnpm cache flag)
       - name: Setup Node.js
         uses: actions/setup-node@v4
         with:
           node-version: 22
 
-      # ✅ Manual pnpm cache (safe)
+      # ✅ Cache pnpm store (safe manual caching)
       - name: Setup pnpm cache
         uses: actions/cache@v4
         with:
@@ -48,20 +48,19 @@ jobs:
           restore-keys: |
             ${{ runner.os }}-pnpm-store-
 
-      # ✅ Install dependencies
+      # ✅ Clean install (IMPORTANT FIX)
       - name: Install dependencies
-        run: pnpm install --no-frozen-lockfile=false
+        run: pnpm install --frozen-lockfile=false
 
-      - name: Fix sharp binary (CI-safe)
-        run: npm install sharp --platform=linux --arch=x64
+      # ❌ DO NOT install sharp manually (REMOVED)
 
-      # ✅ Prevent Jekyll processing
+      # ✅ Create nojekyll
       - name: Create .nojekyll file
         run: |
           mkdir -p public
           touch public/.nojekyll
 
-      # ✅ Build project
+      # ✅ Build Next.js
       - name: Build with Next.js
         run: pnpm run build
 
@@ -69,14 +68,14 @@ jobs:
       - name: Check build output
         run: |
           if [ -d "./out" ] && [ "$(ls -A ./out)" ]; then
-            echo "✅ Build successful! out directory exists"
+            echo "✅ Build successful"
           else
-            echo "❌ Build failed: out directory is missing"
+            echo "❌ Build failed"
             ls -la
             exit 1
           fi
 
-      # ✅ Upload static site
+      # ✅ Upload artifact
       - name: Upload Pages Artifact
         uses: actions/upload-pages-artifact@v3
         with:
