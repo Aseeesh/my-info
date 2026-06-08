@@ -27,18 +27,26 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
 
-      # ✅ Install pnpm FIRST (fixes your error)
+      # ✅ Install pnpm (no issues here)
       - name: Setup pnpm
         uses: pnpm/action-setup@v4
         with:
           version: 9
 
-      # ✅ Then setup Node + caching
+      # ❌ DO NOT use cache: pnpm (this causes your error)
       - name: Setup Node.js
         uses: actions/setup-node@v4
         with:
           node-version: 22
-          cache: "pnpm"
+
+      # ✅ Manual pnpm cache (safe)
+      - name: Setup pnpm cache
+        uses: actions/cache@v4
+        with:
+          path: ~/.pnpm-store
+          key: ${{ runner.os }}-pnpm-store-${{ hashFiles('**/pnpm-lock.yaml') }}
+          restore-keys: |
+            ${{ runner.os }}-pnpm-store-
 
       # ✅ Install dependencies
       - name: Install dependencies

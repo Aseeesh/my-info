@@ -1,4 +1,2 @@
-allowBuilds:
-  canvas: false
-  sharp: false
-  unrs-resolver: false
+packages:
+  - .
