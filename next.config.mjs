@@ -5,11 +5,8 @@ import env from "./src/utils/env.mjs";
 
 /** @type {import("next").NextConfig} */
 const nextConfig = {
-  // Only use basePath if we're not in development
-  ...(process.env.NODE_ENV === "production" && {
-    basePath: process.env.NEXT_PUBLIC_BASE_PATH || "",
-    assetPrefix: process.env.NEXT_PUBLIC_BASE_PATH || "",
-  }),
+  basePath: process.env.NEXT_PUBLIC_BASE_PATH || "",
+  assetPrefix: process.env.NEXT_PUBLIC_BASE_PATH || "",
   env,
   images: {
     unoptimized: true,
@@ -22,7 +19,7 @@ const nextConfig = {
   reactStrictMode: true,
   transpilePackages: ["next-image-export-optimizer"],
 
-  // Disable type checking and linting during build to avoid failures
+  // Temporarily disable these to fix build
   typescript: {
     ignoreBuildErrors: true,
   },
@@ -34,7 +31,6 @@ const nextConfig = {
     config.resolve.alias.canvas = false;
     config.resolve.fallback = { fs: false };
 
-    // Only add CopyPlugin for client builds
     if (!isServer) {
       config.plugins.push(
         new CopyPlugin({
