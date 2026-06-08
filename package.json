@@ -29,7 +29,7 @@
     "dev": "next dev -p 3001",
     "dev:secure": "next dev --experimental-https -p 3001",
     "build:image": "next-image-export-optimizer",
-    "build": "next build && next export && pnpm run build:image",
+    "build": "next build && pnpm run build:image",
     "start": "next start -p 3001",
     "lint": "next lint",
     "format": "prettier --write .",
