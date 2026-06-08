@@ -14,6 +14,9 @@ concurrency:
   group: "pages"
   cancel-in-progress: false
 
+env:
+  FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: true
+
 jobs:
   build:
     runs-on: ubuntu-latest
@@ -30,56 +33,46 @@ jobs:
         uses: pnpm/action-setup@v4
         with:
           version: 9
-          run_install: false
-
-      - name: Get pnpm store directory
-        shell: bash
-        run: |
-          echo "STORE_PATH=$(pnpm store path --silent)" >> $GITHUB_ENV
-
-      - name: Setup pnpm cache
-        uses: actions/cache@v4
-        with:
-          path: ${{ env.STORE_PATH }}
-          key: ${{ runner.os }}-pnpm-store-${{ hashFiles('**/pnpm-lock.yaml') }}
-          restore-keys: |
-            ${{ runner.os }}-pnpm-store-
 
       - name: Install dependencies
-        run: pnpm install --frozen-lockfile
+        run: pnpm install --no-frozen-lockfile
 
       - name: Create .nojekyll file
         run: |
           mkdir -p public
           touch public/.nojekyll
+          echo "✅ Created .nojekyll file"
 
       - name: Build
         run: pnpm run build
         env:
           NEXT_PUBLIC_BASE_PATH: /my-info
+          NODE_ENV: production
 
-      - name: List output directory (debug)
+      - name: Verify build output
         run: |
-          echo "Contents of ./out directory:"
-          ls -la ./out || echo "out directory does not exist"
-          echo "Contents of current directory:"
-          ls -la
+          if [ -d "./out" ]; then
+            echo "✅ Build successful! out directory exists"
+            ls -la ./out
+          else
+            echo "❌ Build failed: out directory does not exist"
+            exit 1
+          fi
 
       - name: Upload Pages Artifact
-        if: success()
         uses: actions/upload-pages-artifact@v3
         with:
           path: ./out
 
   deploy:
     needs: build
+    runs-on: ubuntu-latest
     permissions:
       pages: write
       id-token: write
     environment:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
-    runs-on: ubuntu-latest
     steps:
       - name: Deploy to GitHub Pages
         id: deployment
