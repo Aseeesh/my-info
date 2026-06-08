@@ -8,10 +8,8 @@ import "react-pdf/dist/Page/AnnotationLayer.css";
 import "react-pdf/dist/Page/TextLayer.css";
 import "./Resume.css";
 
-pdfjs.GlobalWorkerOptions.workerSrc = new URL(
-  "pdfjs-dist/build/pdf.worker.min.js",
-  import.meta.url,
-).toString();
+// Updated worker import for newer versions
+pdfjs.GlobalWorkerOptions.workerSrc = `//cdnjs.cloudflare.com/ajax/libs/pdf.js/${pdfjs.version}/pdf.worker.min.js`;
 
 const options = {
   cMapUrl: "/cmaps/",
@@ -52,8 +50,8 @@ export default function Resume({
   );
 
   const onDocumentLoadSuccess = useCallback(
-    ({ numPages }: PDFDocumentProxy) => {
-      setNumPages(numPages);
+    ({ numPages: loadedPages }: PDFDocumentProxy) => {
+      setNumPages(loadedPages);
     },
     [],
   );

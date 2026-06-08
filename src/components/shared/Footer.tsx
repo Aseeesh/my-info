@@ -1,11 +1,8 @@
 "use client";
 import Link from "next/link";
-import {
-  SiGithub,
-  SiLinkedin,
-  SiNextdotjs,
-  SiTypescript,
-} from "react-icons/si";
+// import { SiLinkedin } from "react-icons/si";
+import { FaLinkedinIn } from "react-icons/fa"; // Alternative Font Awesome
+import { SiGithub, SiNextdotjs, SiTypescript } from "react-icons/si";
 import { useSiteInfo } from "@/hooks/context/SiteInfoContext";
 
 export default function Footer() {
@@ -59,7 +56,7 @@ export default function Footer() {
               href={siteInfo[0].social.linkedin}
             >
               <span className="sr-only">linkedin</span>
-              <SiLinkedin className="h-6 w-6 fill-current text-gray-700 hover:text-primary-500 dark:text-gray-200 dark:hover:text-primary-400" />
+              <FaLinkedinIn className="h-6 w-6 fill-current text-gray-700 hover:text-primary-500 dark:text-gray-200 dark:hover:text-primary-400" />
             </Link>
           </div>
 

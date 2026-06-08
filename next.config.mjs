@@ -5,6 +5,7 @@ import env from "./src/utils/env.mjs";
 
 /** @type {import("next").NextConfig} */
 const nextConfig = {
+  basePath: "/my-info",
   env,
   images: {
     loader: "custom",
@@ -14,7 +15,8 @@ const nextConfig = {
   experimental: {
     nextScriptWorkers: true,
   },
-  output: "standalone",
+  output: "export",
+  //output: "standalone",
   reactStrictMode: true,
   transpilePackages: ["next-image-export-optimizer"],
   webpack: (config) => {
