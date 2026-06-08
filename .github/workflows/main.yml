@@ -1,4 +1,4 @@
-# https://github.com/actions/starter-workflows/blob/main/pages/nextjs.yml
+# .github/workflows/main.yml
 name: Build & Deploy
 
 on:
@@ -18,8 +18,8 @@ concurrency:
   cancel-in-progress: false
 
 env:
-  NODE_VERSION: 22 # Updated to Node.js 22 (LTS) to avoid deprecation
-  PNPM_VERSION: 9.15.0 # Updated to latest stable
+  NODE_VERSION: 22
+  PNPM_VERSION: 9.15.0
 
 jobs:
   build:
@@ -34,23 +34,21 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
 
-      - name: Install pnpm
-        uses: pnpm/action-setup@v4
-        with:
-          version: ${{ env.PNPM_VERSION }}
-          run_install: false # Add this to prevent automatic install
-
       - name: Setup Node.js
         uses: actions/setup-node@v4
         with:
           node-version: ${{ env.NODE_VERSION }}
-          cache: "pnpm" # Changed from "pnpm" to 'pnpm'
+
+      - name: Install pnpm
+        uses: pnpm/action-setup@v4
+        with:
+          version: ${{ env.PNPM_VERSION }}
+          run_install: false
 
       - name: Get pnpm store directory
         id: pnpm-cache
-        shell: bash
         run: |
-          echo "STORE_PATH=$(pnpm store path --silent)" >> $GITHUB_OUTPUT
+          echo "STORE_PATH=$(pnpm store path)" >> $GITHUB_OUTPUT
 
       - name: Setup pnpm cache
         uses: actions/cache@v4
@@ -60,23 +58,8 @@ jobs:
           restore-keys: |
             ${{ runner.os }}-pnpm-store-
 
-      - name: Setup Pages
-        id: pages
-        uses: actions/configure-pages@v5
-        with:
-          static_site_generator: next
-
-      - name: Restore Next.js cache
-        uses: actions/cache@v4
-        with:
-          path: |
-            .next/cache
-          key: ${{ runner.os }}-nextjs-${{ hashFiles('**/pnpm-lock.yaml') }}-${{ hashFiles('**.[jt]s', '**.[jt]sx') }}
-          restore-keys: |
-            ${{ runner.os }}-nextjs-${{ hashFiles('**/pnpm-lock.yaml') }}-
-
       - name: Install dependencies
-        run: pnpm install --frozen-lockfile # Add frozen-lockfile for CI
+        run: pnpm install --no-frozen-lockfile
 
       - name: Build with Next.js
         run: pnpm run build

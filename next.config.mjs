@@ -8,6 +8,7 @@ const nextConfig = {
   basePath: "/my-info",
   env,
   images: {
+    unoptimized: true,
     loader: "custom",
     imageSizes: [16, 32, 48, 64, 96, 128, 256, 384],
     deviceSizes: [640, 750, 828, 1080, 1200, 1920, 2048, 3840],
@@ -17,6 +18,7 @@ const nextConfig = {
   },
   output: "export",
   //output: "standalone",
+  trailingSlash: true,
   reactStrictMode: true,
   transpilePackages: ["next-image-export-optimizer"],
   webpack: (config) => {
