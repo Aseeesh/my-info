@@ -14,9 +14,6 @@ concurrency:
   group: "pages"
   cancel-in-progress: false
 
-env:
-  FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: true
-
 jobs:
   build:
     runs-on: ubuntu-latest
@@ -35,40 +32,10 @@ jobs:
           version: 9
 
       - name: Install dependencies
-        run: pnpm install --no-frozen-lockfile
+        run: pnpm install
 
-      - name: Create .nojekyll file
-        run: |
-          mkdir -p public
-          touch public/.nojekyll
-          echo "✅ Created .nojekyll file"
-
-      - name: Build with verbose output
-        run: |
-          pnpm run build 2>&1 | tee build.log
-          echo "--- BUILD EXIT CODE: $? ---"
-        env:
-          NEXT_PUBLIC_BASE_PATH: /my-info
-          NODE_ENV: production
-
-      - name: Show build log if failed
-        if: failure()
-        run: |
-          echo "=== BUILD LOG ==="
-          cat build.log
-          echo "=== END BUILD LOG ==="
-
-      - name: Verify build output
-        run: |
-          if [ -d "./out" ]; then
-            echo "✅ Build successful! out directory exists"
-            ls -la ./out
-          else
-            echo "❌ Build failed: out directory does not exist"
-            echo "Current directory contents:"
-            ls -la
-            exit 1
-          fi
+      - name: Build
+        run: pnpm run build
 
       - name: Upload Pages Artifact
         uses: actions/upload-pages-artifact@v3
@@ -77,13 +44,13 @@ jobs:
 
   deploy:
     needs: build
-    runs-on: ubuntu-latest
     permissions:
       pages: write
       id-token: write
     environment:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
+    runs-on: ubuntu-latest
     steps:
       - name: Deploy to GitHub Pages
         id: deployment
