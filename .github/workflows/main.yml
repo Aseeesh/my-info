@@ -68,11 +68,29 @@ jobs:
           static_site_generator: next
 
       - name: Build with Next.js
-        run: pnpm run build
+        id: build
+        run: |
+          pnpm run build 2>&1 | tee build.log
+          echo "Build exit code: $?"
+
+      - name: Check build output
+        run: |
+          echo "Checking for out directory..."
+          if [ -d "./out" ]; then
+            echo "✅ out directory exists"
+            ls -la ./out/
+          else
+            echo "❌ out directory does NOT exist"
+            echo "Current directory contents:"
+            ls -la
+            echo "Build log:"
+            cat build.log
+            exit 1
+          fi
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
-        if: github.ref == 'refs/heads/main'
+        if: github.ref == 'refs/heads/main' && success()
         with:
           path: ./out
 
@@ -82,7 +100,7 @@ jobs:
       url: ${{ steps.deployment.outputs.page_url }}
     runs-on: ubuntu-latest
     needs: build
-    if: github.ref == 'refs/heads/main'
+    if: github.ref == 'refs/heads/main' && success()
     steps:
       - name: Deploy to GitHub Pages
         id: deployment
