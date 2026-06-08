@@ -50,7 +50,7 @@ jobs:
 
       # ✅ Install dependencies
       - name: Install dependencies
-        run: pnpm install --no-frozen-lockfile
+        run: pnpm install --no-frozen-lockfile --include=optional
 
       # ✅ Prevent Jekyll processing
       - name: Create .nojekyll file
