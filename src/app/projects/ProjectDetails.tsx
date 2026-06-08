@@ -9,33 +9,33 @@ export default function ProjectDetails() {
   const params = useParams();
   const { projectData, error, isLoading } = useProjectById(params.id as string);
 
-  if (isLoading) return <p>Loading details...</p>;
-  if (error) return <p>{error}</p>;
+  if (isLoading)
+    return (
+      <div className="container mx-auto px-4 py-20 text-center">
+        Loading project details...
+      </div>
+    );
+  if (error)
+    return (
+      <div className="container mx-auto px-4 py-20 text-center text-red-500">
+        {error}
+      </div>
+    );
+
   return (
     projectData != null && (
-      <div className="container mx-auto">
+      <div className="container mx-auto px-4">
+        {/* Header Section */}
         <div>
           <p className="font-general-medium text-primary-dark dark:text-primary-light mb-7 mt-14 text-left text-3xl font-bold sm:mt-20 sm:text-4xl">
             {projectData.ProjectHeader.title}
           </p>
-          <div className="flex">
-            <div className="mr-10 flex items-center">
+          <div className="flex flex-wrap gap-4">
+            <div className="flex items-center">
               <FiCalendar className="text-ternary-dark dark:text-ternary-light text-xl" />
-              {projectData.ProjectHeader.publishDate.map((date, index) => {
-                return (
-                  <>
-                    {"   "}
-                    <span
-                      className="font-general-regular text-primary-dark dark:text-primary-light ml-2 leading-none"
-                      key={index}
-                    >
-                      {date}
-                      {index <
-                        projectData.ProjectHeader.publishDate.length - 1 && "-"}
-                    </span>
-                  </>
-                );
-              })}
+              <span className="font-general-regular text-primary-dark dark:text-primary-light ml-2 leading-none">
+                {projectData.ProjectHeader.publishDate.join(" - ")}
+              </span>
             </div>
             <div className="flex items-center">
               <FiTag className="text-ternary-dark dark:text-ternary-light h-4 w-4" />
@@ -46,147 +46,140 @@ export default function ProjectDetails() {
           </div>
         </div>
 
-        {/* Info */}
+        {/* Main Content */}
         <div className="mt-14 block gap-0 sm:flex sm:gap-10">
+          {/* Left Column - Image & Info */}
           <div className="w-full text-left sm:w-1/3">
-            {/* Single project client details */}
+            {/* Project Image */}
             <div className="mb-7">
-              {projectData.ProjectImages.map((project) => {
-                return (
-                  <div className="mb-10 sm:mb-0" key={project.id}>
-                    <ExportedImage
-                      title={project.title}
-                      alt={project.title}
-                      src={iconImage}
-                      width={320}
-                      height={220}
-                      placeholder="blur"
-                      className="cursor-pointer rounded-xl shadow-lg sm:shadow-none"
-                    />
-                  </div>
-                );
-              })}
-              {/* <p className="font-general-regular text-secondary-dark dark:text-secondary-light mb-2 text-2xl font-semibold">
-                {projectData.ProjectInfo.ClientHeading}
-              </p> */}
-            </div>{" "}
+              {projectData.ProjectImages.map((project) => (
+                <div className="mb-10 sm:mb-0" key={project.id}>
+                  <ExportedImage
+                    title={project.title}
+                    alt={project.title}
+                    src={iconImage}
+                    width={320}
+                    height={220}
+                    className="w-full rounded-xl object-cover shadow-lg"
+                  />
+                </div>
+              ))}
+            </div>
+
+            {/* Company Info */}
             <div className="mb-7">
-              <ul className="leading-loose">
-                {projectData.ProjectInfo.CompanyInfo.map((info) => {
-                  return info.isURL ? (
-                    <li
-                      className="font-general-regular text-ternary-dark dark:text-ternary-light"
-                      key={info.id}
-                    >
+              <ul className="space-y-2 leading-loose">
+                {projectData.ProjectInfo.CompanyInfo.map((info) => (
+                  <li key={info.id}>
+                    {info.isURL ? (
                       <a
-                        className="group flex items-center rounded-lg bg-gray-50 p-3 text-base font-bold text-gray-900 hover:bg-gray-100 hover:shadow dark:bg-gray-600 dark:text-white dark:hover:bg-gray-500"
+                        className="flex items-center rounded-lg bg-gray-50 p-3 text-base font-bold text-gray-900 transition-all hover:bg-gray-100 hover:shadow dark:bg-gray-600 dark:text-white dark:hover:bg-gray-500"
                         href={info.details}
+                        target="_blank"
+                        rel="noopener noreferrer"
                       >
-                        <span className="ms-3 flex-1 whitespace-nowrap font-medium">
+                        <span className="flex-1 whitespace-nowrap font-medium">
                           {info.title}
                         </span>
-                        {/* <span className="ms-3 inline-flex items-center justify-center rounded bg-gray-200 px-2 py-0.5 text-xs text-gray-500 dark:bg-gray-700 dark:text-gray-400">
-                        {info.details}
-                      </span> */}
                       </a>
-                    </li>
-                  ) : (
-                    <li
-                      className="font-general-regular text-ternary-dark dark:text-ternary-light"
-                      key={info.id}
-                    >
-                      <p className="group flex items-center rounded-lg bg-gray-50 p-3 text-base font-bold text-gray-900 hover:bg-gray-100 hover:shadow dark:bg-gray-600 dark:text-white dark:hover:bg-gray-500">
-                        {info.details == "Location" && (
-                          <FiMapPin className="text-ternary-dark dark:text-ternary-light h-4 w-4" />
+                    ) : (
+                      <div className="flex items-center rounded-lg bg-gray-50 p-3 text-base font-bold text-gray-900 dark:bg-gray-600 dark:text-white">
+                        {info.details === "Location" && (
+                          <FiMapPin className="h-4 w-4 flex-shrink-0" />
                         )}
-                        <span className="ms-3 flex-1 whitespace-nowrap font-medium">
+                        <span className="ml-3 flex-1 whitespace-nowrap font-medium">
                           {info.title}
                         </span>
-                        {/* <span className="ms-3 inline-flex items-center justify-center rounded bg-gray-200 px-2 py-0.5 text-xs text-gray-500 dark:bg-gray-700 dark:text-gray-400">
-                          {info.details}
-                        </span> */}
-                      </p>
-                    </li>
-                  );
-                })}
+                      </div>
+                    )}
+                  </li>
+                ))}
               </ul>
             </div>
-            {/* Single project technologies */}
-            <div className="mb-7">
-              <p className="font-general-regular text-ternary-dark dark:text-ternary-light mb-2 text-2xl font-semibold">
-                {projectData.ProjectInfo.Technologies[0].title}
-              </p>
 
-              <div className="flex flex-wrap items-center gap-1">
-                {projectData.ProjectInfo.Technologies[0].techs.map(
-                  (item, index) => (
-                    <button
-                      key={index}
-                      className="rounded-lg bg-emerald-600 px-2 py-1 text-xs text-white dark:bg-gray-900 dark:text-neutral-400"
-                    >
-                      {item}
-                    </button>
-                  ),
-                )}
-              </div>
-            </div>
+            {/* Technologies */}
+            {projectData.ProjectInfo.Technologies &&
+              projectData.ProjectInfo.Technologies.length > 0 && (
+                <div className="mb-7">
+                  <p className="font-general-regular text-ternary-dark dark:text-ternary-light mb-3 text-2xl font-semibold">
+                    Technologies
+                  </p>
+                  <div className="flex flex-wrap items-center gap-2">
+                    {projectData.ProjectInfo.Technologies.map(
+                      (techGroup, groupIndex) =>
+                        techGroup.techs.map((item, index) => (
+                          <span
+                            key={`${groupIndex}-${index}`}
+                            className="rounded-lg bg-emerald-600 px-2.5 py-1.5 text-xs font-medium text-white dark:bg-gray-700 dark:text-neutral-300"
+                          >
+                            {item}
+                          </span>
+                        )),
+                    )}
+                  </div>
+                </div>
+              )}
           </div>
-          {/*  Single project right section details */}
+
+          {/* Right Column - Description & Details */}
           <div className="mt-10 w-full text-left sm:mt-0 sm:w-2/3">
-            {/* Single project objectives */}
+            {/* Description */}
             <div className="mb-7">
-              <p className="font-general-regular text-ternary-dark dark:text-ternary-light mb-2 divide-gray-200 text-2xl font-semibold dark:divide-gray-700">
+              <p className="font-general-regular text-ternary-dark dark:text-ternary-light mb-3 text-2xl font-semibold">
                 Description
               </p>
-              <p className="text-md text-gray-500 dark:text-gray-400">
+              <p className="text-md leading-relaxed text-gray-600 dark:text-gray-400">
                 {projectData.description}
               </p>
             </div>
-            {projectData.ProjectInfo.KeyRoleDetails.length > 0 && (
+
+            {/* Key Role */}
+            {projectData.ProjectInfo.KeyRoleDetails?.length > 0 && (
               <>
-                <p className="text-primary-dark dark:text-primary-light mb-7 text-2xl font-bold">
-                  {projectData.ProjectInfo.KeyRoleHeading}
+                <p className="text-primary-dark dark:text-primary-light mb-4 text-2xl font-bold">
+                  {projectData.ProjectInfo.KeyRoleHeading || "Key Role"}
                 </p>
-                <ul className="max-w divide-y divide-gray-200 dark:divide-gray-700">
-                  {projectData.ProjectInfo.KeyRoleDetails.map((details) => {
-                    return (
-                      <li className="py-3 sm:py-4" key={details.id}>
-                        <div className="flex items-center space-x-4 rtl:space-x-reverse">
-                          <div className="min-w-0 flex-1">
-                            <p className="text-md text-gray-500 dark:text-gray-400">
-                              {details.details}
-                            </p>
-                          </div>
+                <ul className="space-y-3 divide-y divide-gray-200 dark:divide-gray-700">
+                  {projectData.ProjectInfo.KeyRoleDetails.map((details) => (
+                    <li className="pt-3 first:pt-0" key={details.id}>
+                      <div className="flex items-start space-x-3">
+                        <div className="min-w-0 flex-1">
+                          <p className="text-gray-600 dark:text-gray-400">
+                            {details.details}
+                          </p>
                         </div>
-                      </li>
-                    );
-                  })}
+                      </div>
+                    </li>
+                  ))}
                 </ul>
               </>
             )}
-            {projectData.ProjectInfo.KeyAchievementHeading.length > 0 && (
+
+            {/* Key Achievements */}
+            {projectData.ProjectInfo.KeyAchievementDetails?.length > 0 && (
               <>
-                <p className="text-primary-dark dark:text-primary-light mb-7 text-2xl font-bold">
-                  {projectData.ProjectInfo.KeyAchievementHeading}
+                <p className="text-primary-dark dark:text-primary-light mb-4 mt-8 text-2xl font-bold">
+                  {projectData.ProjectInfo.KeyAchievementHeading ||
+                    "Key Achievements"}
                 </p>
-                <ul className="max-w list-inside space-y-1 text-gray-500 dark:text-gray-400">
+                <ul className="space-y-2">
                   {projectData.ProjectInfo.KeyAchievementDetails.map(
-                    (details) => {
-                      return (
-                        <li className="flex items-center" key={details.id}>
-                          <svg
-                            className="me-2 h-3.5 w-3.5 flex-shrink-0 text-green-500 dark:text-green-400"
-                            aria-hidden="true"
-                            xmlns="http://www.w3.org/2000/svg"
-                            fill="currentColor"
-                            viewBox="0 0 20 20"
-                          >
-                            <path d="M10 .5a9.5 9.5 0 1 0 9.5 9.5A9.51 9.51 0 0 0 10 .5Zm3.707 8.207-4 4a1 1 0 0 1-1.414 0l-2-2a1 1 0 0 1 1.414-1.414L9 10.586l3.293-3.293a1 1 0 0 1 1.414 1.414Z" />
-                          </svg>
+                    (details) => (
+                      <li className="flex items-start gap-2" key={details.id}>
+                        <svg
+                          className="mt-1 h-4 w-4 flex-shrink-0 text-green-500 dark:text-green-400"
+                          aria-hidden="true"
+                          xmlns="http://www.w3.org/2000/svg"
+                          fill="currentColor"
+                          viewBox="0 0 20 20"
+                        >
+                          <path d="M10 .5a9.5 9.5 0 1 0 9.5 9.5A9.51 9.51 0 0 0 10 .5Zm3.707 8.207-4 4a1 1 0 0 1-1.414 0l-2-2a1 1 0 0 1 1.414-1.414L9 10.586l3.293-3.293a1 1 0 0 1 1.414 1.414Z" />
+                        </svg>
+                        <span className="text-gray-600 dark:text-gray-400">
                           {details.details}
-                        </li>
-                      );
-                    },
+                        </span>
+                      </li>
+                    ),
                   )}
                 </ul>
               </>

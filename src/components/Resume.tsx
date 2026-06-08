@@ -1,100 +1,46 @@
 "use client";
 
-import { useResizeObserver } from "@wojtekmaj/react-hooks";
-import type { PDFDocumentProxy } from "pdfjs-dist";
-import { useCallback, useEffect, useRef, useState } from "react";
-import { Document, pdfjs, Page as ReactPdfPage } from "react-pdf";
+import { useState } from "react";
+import { Document, Page, pdfjs } from "react-pdf";
 import "react-pdf/dist/Page/AnnotationLayer.css";
 import "react-pdf/dist/Page/TextLayer.css";
-import "./Resume.css";
 
-// Updated worker import for newer versions
 pdfjs.GlobalWorkerOptions.workerSrc = `//cdnjs.cloudflare.com/ajax/libs/pdf.js/${pdfjs.version}/pdf.worker.min.js`;
 
-const options = {
-  cMapUrl: "/cmaps/",
-  standardFontDataUrl: "/standard_fonts/",
-};
+// CORS proxy to bypass Google Drive restrictions
+const CORS_PROXY = "https://cors-anywhere.herokuapp.com/";
+const GOOGLE_DRIVE_FILE_ID = "1l0bq3sx1vD6ngVG3cb6VzXPeeKSkvN-MaHcJb1TACKs";
+const PDF_URL = `${CORS_PROXY}https://drive.google.com/uc?export=download&id=${GOOGLE_DRIVE_FILE_ID}`;
 
-export default function Resume({
-  file,
-  maxWidth,
-}: {
-  file: string;
-  maxWidth: number;
-}) {
+export default function Resume() {
   const [numPages, setNumPages] = useState<number>(0);
-  const [containerRef, setContainerRef] = useState<HTMLDivElement | null>(null);
-  const [containerWidth, setContainerWidth] = useState<number>(400);
-  const [documentHeight, setDocumentHeight] = useState<number>(400);
 
-  const handleSetContainerWidth = useCallback((width: number) => {
-    setContainerWidth(width);
-    setDocumentHeight(Math.floor(width * (11 / 8.5)));
-  }, []);
-
-  const debounce = useCallback(
-    (fn: typeof handleSetContainerWidth, delay: number) => {
-      let timeoutId: NodeJS.Timeout;
-
-      return (...args: Parameters<typeof handleSetContainerWidth>) => {
-        clearTimeout(timeoutId);
-        timeoutId = setTimeout(() => fn(...args), delay);
-      };
-    },
-    [],
-  );
-
-  const debounceSetContainerWidth = useRef(
-    debounce(handleSetContainerWidth, 100),
-  );
-
-  const onDocumentLoadSuccess = useCallback(
-    ({ numPages: loadedPages }: PDFDocumentProxy) => {
-      setNumPages(loadedPages);
-    },
-    [],
-  );
-
-  useEffect(() => {
-    debounceSetContainerWidth.current = debounce(handleSetContainerWidth, 100);
-  }, [debounce, handleSetContainerWidth]);
-
-  const resizeObserverCallback: ResizeObserverCallback = useCallback(
-    (entries) => {
-      const [entry] = entries;
-
-      if (entry) {
-        debounceSetContainerWidth.current(entry.contentRect.width);
-      }
-    },
-    [],
-  );
-
-  useResizeObserver(containerRef, {}, resizeObserverCallback);
+  function onDocumentLoadSuccess({ numPages }: { numPages: number }) {
+    setNumPages(numPages);
+  }
 
   return (
-    <div className="PDF__container">
-      <div className="PDF__container__document xs:m-0" ref={setContainerRef}>
-        <Document
-          file={file}
-          onLoadSuccess={onDocumentLoadSuccess}
-          options={options}
-        >
-          {Array.from(new Array(numPages), (_, numPage) => (
-            <ReactPdfPage
-              canvasBackground="#ffffff"
-              className="min-w-fit border border-primary-500 bg-primary-500"
-              key={`page_${numPage + 1}`}
-              pageNumber={numPage + 1}
-              width={
-                containerWidth ? Math.min(containerWidth, maxWidth) : maxWidth
-              }
-              height={documentHeight}
-            />
-          ))}
-        </Document>
-      </div>
+    <div className="flex flex-col items-center">
+      <Document
+        file={PDF_URL}
+        onLoadSuccess={onDocumentLoadSuccess}
+        loading={<div className="py-20 text-center">Loading PDF...</div>}
+        error={
+          <div className="py-20 text-center text-red-500">
+            <p>Unable to load PDF. Please use the download button to view.</p>
+            <a
+              href={`https://drive.google.com/uc?export=download&id=${GOOGLE_DRIVE_FILE_ID}`}
+              className="mt-4 inline-block rounded-lg bg-primary-500 px-4 py-2 text-white"
+            >
+              Download PDF
+            </a>
+          </div>
+        }
+      >
+        {Array.from(new Array(numPages), (_, index) => (
+          <Page key={`page_${index + 1}`} pageNumber={index + 1} />
+        ))}
+      </Document>
     </div>
   );
 }

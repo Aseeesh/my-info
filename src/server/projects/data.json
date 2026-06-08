@@ -1,21 +1,167 @@
 [
   {
+    "id": "a7f3e8c1-4b2d-49a6-9c8e-2d5f1a7b9e3c",
+    "title": "AgroRange: Agricultural IoT Platform",
+    "description": "An agricultural monitoring and management platform consisting of a .NET 9 backend API, an Expo-based mobile app (SmartChyau), and a Next.js admin dashboard. The system enables real-time IoT sensor data collection, threshold-based alerting, farm and product management, educational content delivery, and role-based access control. It supports cross-platform mobile access (iOS/Android) and a centralized web dashboard for administrators and farmers.",
+    "url": "https://www.linkedin.cn/incareer/company/whitehatengineering",
+    "category": "Web Application/Mobile Application",
+    "img": "/images/Software Development.png",
+    "ProjectHeader": {
+      "title": "AgroRange: Agricultural IoT Platform",
+      "publishDate": ["Dec 2025", "Present"],
+      "tags": "Full Stack Software Engineer"
+    },
+    "ProjectImages": [
+      {
+        "id": "b3c5d8f2-6e7a-4b9c-8d1f-3a5e7c9b2d4f",
+        "title": "AgroRange: Agricultural IoT Platform",
+        "img": "/images/agrorange.jpg"
+      }
+    ],
+    "ProjectInfo": {
+      "ClientHeading": "Agro Range Nepal",
+      "CompanyInfo": [
+        {
+          "id": "c7d9e2f1-5a6b-4c8d-9e2f-1b3c5d7e9f1a",
+          "title": "Remote",
+          "isURL": false,
+          "details": "Location"
+        },
+        {
+          "id": "d8e0f3a2-6b7c-4d9e-0f3a-2c4d6e8f0a2b",
+          "title": "Full Stack Software Engineer",
+          "isURL": false,
+          "details": "Full Stack Software Engineer"
+        }
+      ],
+      "Technologies": [
+        {
+          "title": "Technologies",
+          "techs": [
+            ".NET 9",
+            "C#",
+            "Expo",
+            "React Native",
+            "Next.js 19",
+            "React",
+            "Tailwind CSS",
+            "Firebase",
+            "JWT",
+            "RabbitMQ",
+            "SignalR",
+            "PostgreSQL",
+            "Redis",
+            "Zustand",
+            "TanStack Table",
+            "React Hook Form",
+            "Zod",
+            "ApexCharts",
+            "Git",
+            "GitHub"
+          ]
+        }
+      ],
+      "KeyRoleHeading": "Key Role",
+      "KeyRoleDetails": [
+        {
+          "id": "e1f2a3b4-5c6d-7e8f-9a0b-1c2d3e4f5a6b",
+          "details": "Designed and developed a RESTful API with Firebase authentication, JWT, RBAC, and 2FA."
+        },
+        {
+          "id": "f2a3b4c5-6d7e-8f9a-0b1c-2d3e4f5a6b7c",
+          "details": "Built time-series data ingestion and real-time alerting systems for IoT sensor monitoring."
+        },
+        {
+          "id": "a3b4c5d6-7e8f-9a0b-1c2d-3e4f5a6b7c8d",
+          "details": "Implemented RabbitMQ message queue to handle high-frequency IoT log ingestion from 10+ devices per farm sending data every 3 seconds, preventing database bottlenecks and ensuring reliable asynchronous processing."
+        },
+        {
+          "id": "b4c5d6e7-8f9a-0b1c-2d3e-4f5a6b7c8d9e",
+          "details": "Developed a worker service to consume queued IoT logs, process threshold evaluations, and publish real-time updates via SignalR to both mobile app and admin dashboard."
+        },
+        {
+          "id": "c5d6e7f8-9a0b-1c2d-3e4f-5a6b7c8d9e0f",
+          "details": "Implemented SignalR for real-time messaging and notification services."
+        },
+        {
+          "id": "d6e7f8a9-0b1c-2d3e-4f5a-6b7c8d9e0f1a",
+          "details": "Optimized database performance with indexing, query optimization, and caching strategies."
+        },
+        {
+          "id": "e7f8a9b0-1c2d-3e4f-5a6b-7c8d9e0f1a2b",
+          "details": "Developed a cross-platform mobile app (iOS/Android) with Expo for farm monitoring and IoT control."
+        },
+        {
+          "id": "f8a9b0c1-2d3e-4f5a-6b7c-8d9e0f1a2b3c",
+          "details": "Integrated real-time sensor visualization, ESP device control, and chat via SignalR."
+        },
+        {
+          "id": "a9b0c1d2-3e4f-5a6b-7c8d-9e0f1a2b3c4d",
+          "details": "Implemented state management (Zustand), API integration layer, and offline-capable media uploads."
+        },
+        {
+          "id": "b0c1d2e3-4f5a-6b7c-8d9e-0f1a2b3c4d5e",
+          "details": "Built learning modules, FAQ, product catalog, and report generation with export features."
+        },
+        {
+          "id": "c1d2e3f4-5a6b-7c8d-9e0f-1a2b3c4d5e6f",
+          "details": "Built a responsive admin panel with role-based access control for both admin and user sections."
+        },
+        {
+          "id": "d2e3f4a5-6b7c-8d9e-0f1a-2b3c4d5e6f7a",
+          "details": "Integrated real-time IoT analytics dashboards (ApexCharts) and SignalR-based live chat."
+        },
+        {
+          "id": "e3f4a5b6-7c8d-9e0f-1a2b-3c4d5e6f7a8b",
+          "details": "Developed CRUD modules for farm, product, user, category, and learning content management."
+        },
+        {
+          "id": "f4a5b6c7-8d9e-0f1a-2b3c-4d5e6f7a8b9c",
+          "details": "Implemented advanced tables (TanStack), form validation (React Hook Form + Zod), and media management."
+        }
+      ],
+      "KeyAchievementHeading": "Key Achievements",
+      "KeyAchievementDetails": [
+        {
+          "id": "a5b6c7d8-9e0f-1a2b-3c4d-5e6f7a8b9c0d",
+          "details": "Successfully delivered a complete agricultural IoT ecosystem across backend, mobile, and web platforms in structured phases, meeting all functional and performance requirements."
+        },
+        {
+          "id": "b6c7d8e9-0f1a-2b3c-4d5e-6f7a8b9c0d1e",
+          "details": "Architected a RabbitMQ-based log ingestion pipeline capable of handling burst traffic from hundreds of IoT devices concurrently, ensuring zero data loss and real-time dashboard updates via SignalR."
+        },
+        {
+          "id": "c7d8e9f0-1a2b-3c4d-5e6f-7a8b9c0d1e2f",
+          "details": "Enabled real-time farm monitoring and alerting through seamless integration of IoT sensor data, SignalR messaging, and threshold-based notifications."
+        },
+        {
+          "id": "d8e9f0a1-2b3c-4d5e-6f7a-8b9c0d1e2f3a",
+          "details": "Built a scalable and maintainable architecture with RBAC, API versioning, caching, and cross-platform support, ensuring security and performance."
+        },
+        {
+          "id": "e9f0a1b2-3c4d-5e6f-7a8b-9c0d1e2f3a4b",
+          "details": "Delivered user-centric features including interactive dashboards, educational content, product catalogs, report generation, and real-time communication tools, empowering farmers and administrators."
+        }
+      ]
+    }
+  },
+  {
     "id": "09eb1c6d-70d4-429e-9b80-92b2c3abf8c4",
-    "title": "Game development with its Admin panel ",
+    "title": "Game Development with Admin Panel",
     "description": "This project involved the end-to-end design, development, and deployment of a cross-platform casino-style game with an integrated administrative dashboard. The game was built for Android, iOS, and Web platforms, followed by the creation of a comprehensive CMS to manage game content, users, and transactions.",
     "url": "https://www.linkedin.cn/incareer/company/whitehatengineering",
     "category": "Web Application/Mobile Application",
     "img": "/images/Software Development.png",
     "ProjectHeader": {
-      "title": "Game development with its Admin panel",
-      "publishDate": ["01-2024", "04-2025"],
-      "tags": ["Senior Software Engineer"]
+      "title": "Game Development with Admin Panel",
+      "publishDate": ["Jan 2024", "Apr 2025"],
+      "tags": "Senior Software Engineer"
     },
     "ProjectImages": [
       {
         "id": "e26a7a26-db2a-4827-898e-058026e523cf",
-        "title": "Game development with its Admin panel",
-        "img": "/images/Software Development.png"
+        "title": "Game Development with Admin Panel",
+        "img": "/images/game-development.jpg"
       }
     ],
     "ProjectInfo": {
@@ -23,7 +169,7 @@
       "CompanyInfo": [
         {
           "id": "283a2ebc-5be0-4882-8540-6b27b55cdd9f",
-          "title": "Remote Job",
+          "title": "Remote",
           "isURL": false,
           "details": "Location"
         },
@@ -36,11 +182,23 @@
       ],
       "Technologies": [
         {
-          "title": "Tools & Technologies",
-          "techs": ["UNITY", "c#", "API", "Postgres", "GITHUB"]
+          "title": "Technologies",
+          "techs": [
+            "Unity",
+            "C#",
+            ".NET",
+            "Next.js",
+            "React",
+            "Tailwind CSS",
+            "PostgreSQL",
+            "Stripe",
+            "REST API",
+            "Git",
+            "GitHub"
+          ]
         }
       ],
-      "KeyRoleHeading": "KeyRole",
+      "KeyRoleHeading": "Key Role",
       "KeyRoleDetails": [
         {
           "id": "99c6999b-11d2-4484-9626-0332bf948ac9",
@@ -52,7 +210,7 @@
         },
         {
           "id": "c8e68588-a613-47e4-9c13-e3e29dec55a6",
-          "details": "Delivered a fully functional game prototype, followed by the complete game suite, and provided post-deployment maintenance for three months"
+          "details": "Delivered a fully functional game prototype, followed by the complete game suite, and provided post-deployment maintenance for three months."
         },
         {
           "id": "e5ca6d91-ca16-4323-918d-fdccd60120b6",
@@ -72,14 +230,14 @@
         },
         {
           "id": "d5a8b1e3-92c7-4f6d-a3b4-6e9f2c7d1089",
-          "details": "Created an intuitive and responsive UI/UX for administrative tools, empowering non-technical stakeholders to manage game content efficiently. "
+          "details": "Created an intuitive and responsive UI/UX for administrative tools, empowering non-technical stakeholders to manage game content efficiently."
         }
       ],
-      "KeyAchievementHeading": "Key Achievement",
+      "KeyAchievementHeading": "Key Achievements",
       "KeyAchievementDetails": [
         {
           "id": "38e10f3e-dadf-46c1-b2d6-1e041f731044",
-          "details": "Successfully delivered the project in clear, structured phases—from game prototype to full deployment and maintenance, followed by a scalable admin dashboard—meeting all approval gates and functionality requirements"
+          "details": "Successfully delivered the project in clear, structured phases—from game prototype to full deployment and maintenance, followed by a scalable admin dashboard—meeting all approval gates and functionality requirements."
         },
         {
           "id": "e5ca6d91-ca16-4323-918d-fdccd60120b6",
@@ -90,21 +248,21 @@
   },
   {
     "id": "22ffaa31-647c-4b9a-b198-325e6abf9848",
-    "title": "My Profile",
+    "title": "My Portfolio Website",
     "description": "This is my Portfolio Website, where I provide a brief introduction about myself, highlight my professional experiences, and share my contact details. Additionally, there is a form that allows anyone to send me a message directly via email.",
     "url": "https://www.linkedin.cn/incareer/company/whitehatengineering",
     "category": "Web Application",
     "img": "/images/Software Development.png",
     "ProjectHeader": {
-      "title": "My Profile",
-      "publishDate": ["11-2024"],
-      "tags": ["FullStack Software Engineer"]
+      "title": "My Portfolio Website",
+      "publishDate": ["Nov 2024"],
+      "tags": "Full Stack Software Engineer"
     },
     "ProjectImages": [
       {
         "id": "e26a7a26-db2a-4827-898e-058026e523cf",
-        "title": "My Profile",
-        "img": "/images/Software Development.png"
+        "title": "My Portfolio Website",
+        "img": "/images/portfolio.jpg"
       }
     ],
     "ProjectInfo": {
@@ -112,158 +270,178 @@
       "CompanyInfo": [
         {
           "id": "283a2ebc-5be0-4882-8540-6b27b55cdd9f",
-          "title": "Remote Job",
+          "title": "Remote",
           "isURL": false,
           "details": "Location"
         },
         {
           "id": "c8e68588-a613-47e4-9c13-e3e29dec55a6",
-          "title": "Project Website",
+          "title": "Live Demo",
           "isURL": true,
           "details": "https://aseeesh.github.io/my-info/"
         }
       ],
       "Technologies": [
         {
-          "title": "Tools & Technologies",
-          "techs": ["NEXTJS", "React", "HOOKS", "GITHUB"]
+          "title": "Technologies",
+          "techs": [
+            "Next.js",
+            "React",
+            "Tailwind CSS",
+            "TypeScript",
+            "Framer Motion",
+            "GitHub Actions",
+            "GitHub Pages"
+          ]
         }
       ],
-      "KeyRoleHeading": "KeyRole",
+      "KeyRoleHeading": "Key Role",
       "KeyRoleDetails": [
         {
           "id": "99c6999b-11d2-4484-9626-0332bf948ac9",
-          "details": " Built the website using Next.js, React hooks, and JSON for data"
+          "details": "Built the website using Next.js, React hooks, and TypeScript for type safety."
         },
         {
           "id": "38e10f3e-dadf-46c1-b2d6-1e041f731044",
-          "details": "Learned Next.js and debugged independently"
+          "details": "Learned Next.js and debugged independently."
         },
         {
           "id": "c8e68588-a613-47e4-9c13-e3e29dec55a6",
-          "details": "Created a responsive, user-friendly interface"
+          "details": "Created a responsive, user-friendly interface with Tailwind CSS."
         }
       ],
-      "KeyAchievementHeading": "Key Achievement",
+      "KeyAchievementHeading": "Key Achievements",
       "KeyAchievementDetails": [
         {
           "id": "38e10f3e-dadf-46c1-b2d6-1e041f731044",
-          "details": "Used JSON for lightweight data management."
+          "details": "Implemented a contact form with email integration for direct messaging."
         },
         {
           "id": "e5ca6d91-ca16-4323-918d-fdccd60120b6",
-          "details": "Deployed successfully using GitHub Actions to GitHub Pages"
+          "details": "Deployed successfully using GitHub Actions to GitHub Pages."
         },
         {
           "id": "99c6999b-11d2-4484-9626-0332bf948ac9",
-          "details": "Created a professional portfolio showcasing skills and projects."
+          "details": "Created a professional portfolio showcasing skills and projects with smooth animations."
         }
       ]
     }
   },
-
   {
     "id": "137aee88-bfd7-4054-a78c-8d6ce6d46e1e",
-    "title": "Food Cost Management",
-    "description": "This system is a comprehensive Restaurant Management System with features for Point of Sale (POS), Inventory, and Payroll Generation. The system aims to streamline operations, enhance customer experience, and improve staff efficiency",
+    "title": "Food Cost Management System",
+    "description": "This system is a comprehensive Restaurant Management System with features for Point of Sale (POS), Inventory, and Payroll Generation. The system aims to streamline operations, enhance customer experience, and improve staff efficiency.",
     "url": "https://www.linkedin.cn/incareer/company/whitehatengineering",
     "category": "Web Application",
     "img": "/images/Software Development.png",
     "ProjectHeader": {
-      "title": "Food Cost Management",
-      "publishDate": ["04-2022", "12-2023"],
-      "tags": ["FullStack Software Engineer"]
+      "title": "Food Cost Management System",
+      "publishDate": ["Apr 2022", "Dec 2023"],
+      "tags": "Full Stack Software Engineer"
     },
     "ProjectImages": [
       {
         "id": "e26a7a26-db2a-4827-898e-058026e523cf",
-        "title": "Food Cost Management",
-        "img": "/images/Software Development.png"
+        "title": "Food Cost Management System",
+        "img": "/images/food-management.jpg"
       }
     ],
     "ProjectInfo": {
-      "ClientHeading": "About Client",
+      "ClientHeading": "WhiteHat Engineering",
       "CompanyInfo": [
         {
           "id": "283a2ebc-5be0-4882-8540-6b27b55cdd9f",
-          "title": "Remote Job",
+          "title": "Remote",
           "isURL": false,
           "details": "Location"
         },
         {
           "id": "e26a7a26-db2a-4827-898e-058026e523cf",
-          "title": "WhiteHat Engineering",
+          "title": "Company Website",
           "isURL": true,
           "details": "https://www.linkedin.com/company/whitehatengineering/"
         }
       ],
       "Technologies": [
         {
-          "title": "Tools & Technologies",
-          "techs": [".Net", "MVC", "Angular", "MSSQL", "JIRA", "GITHUB", "AWS"]
+          "title": "Technologies",
+          "techs": [
+            ".NET 6",
+            "MVC",
+            "Angular",
+            "React",
+            "NestJS",
+            "MSSQL",
+            "Java",
+            "JIRA",
+            "GitHub",
+            "AWS EC2",
+            "AWS S3",
+            "Azure"
+          ]
         }
       ],
-      "KeyRoleHeading": "KeyRole",
+      "KeyRoleHeading": "Key Role",
       "KeyRoleDetails": [
         {
           "id": "99c6999b-11d2-4484-9626-0332bf948ac9",
-          "details": "Converted the existing .net 2 mvc app to .net 6 and also involved in creating the new module in react"
+          "details": "Converted the existing .NET 2 MVC app to .NET 6 and also involved in creating new modules in React."
         },
         {
           "id": "38e10f3e-dadf-46c1-b2d6-1e041f731044",
-          "details": "Converting the existing web services into rest api in nest JS."
+          "details": "Converted existing web services into REST APIs in NestJS."
         },
         {
           "id": "3c227b0b-3b11-4751-845d-b70cec85b4e6",
-          "details": "Involve in creating a separate new application written in Java and angular"
+          "details": "Involved in creating a separate new application written in Java and Angular."
         },
         {
           "id": "3a355be3-d7cc-4832-828f-465fe25a42b5",
-          "details": "Take responsibility for the given module, communicate with the PM for the requirements and coordinate with the team members to complete the task"
+          "details": "Took responsibility for given modules, communicated with the PM for requirements, and coordinated with team members to complete tasks."
         },
         {
           "id": "9ac8f688-de63-44ff-843b-00133aefa439",
-          "details": "Created architecture for the API in next js"
+          "details": "Created architecture for the API in Next.js."
         },
         {
           "id": "9adbdec4-dd67-44c5-a5c9-90f4154e5bcd",
-          "details": "Worked in Jira and agile methodology and also involved in the code review process"
+          "details": "Worked with Jira and agile methodology and also involved in the code review process."
         }
       ],
-      "KeyAchievementHeading": "Key Achievement",
+      "KeyAchievementHeading": "Key Achievements",
       "KeyAchievementDetails": [
         {
           "id": "e5ca6d91-ca16-4323-918d-fdccd60120b6",
-          "details": "Experience with EC2 servers, S3 buckets and also used Azure and GIT for CI/CD pipeline"
+          "details": "Gained experience with EC2 servers, S3 buckets, and used Azure and Git for CI/CD pipelines."
         },
         {
           "id": "99c6999b-11d2-4484-9626-0332bf948ac9",
-          "details": "Successfully converted the project from old version of .net to the latest .net 6"
+          "details": "Successfully converted the project from an older version of .NET to the latest .NET 6."
         }
       ]
     }
   },
   {
     "id": "19142fab-9742-4a73-8401-854bb0b342c2",
-    "title": "Trasndoclink Cargo Logistic",
+    "title": "Transdoclink Cargo Logistics",
     "description": "This system is a comprehensive solution designed to streamline the process of managing cargo shipments. It enables users to create and manage detailed records of cargo shipments, including invoices, cargo information, and real-time location tracking. This system aims to provide efficient and accurate cargo management capabilities, facilitating seamless communication between shippers, carriers, and customers, ultimately enhancing overall supply chain operations.",
     "url": "https://www.linkedin.cn/incareer/company/usome/",
     "category": "Web Application",
     "img": "/images/Software Development.png",
     "ProjectHeader": {
-      "title": "Trasndoclink Cargo Logistic",
-      "publishDate": ["03-2021", "03-2022"],
-      "tags": ["Web Application"]
+      "title": "Transdoclink Cargo Logistics",
+      "publishDate": ["Mar 2021", "Mar 2022"],
+      "tags": "Tech Lead"
     },
     "ProjectImages": [
       {
         "id": "c8e68588-a613-47e4-9c13-e3e29dec55a6",
-        "title": "Trasndoclink Cargo Logistic",
-        "img": "/images/Software Development.png"
+        "title": "Transdoclink Cargo Logistics",
+        "img": "/images/cargo-logistics.jpg"
       }
     ],
     "ProjectInfo": {
-      "ClientHeading": "About Client",
+      "ClientHeading": "USOME",
       "CompanyInfo": [
         {
           "id": "b0701d9c-4f5b-4e10-8f5a-30d70c5d12f2",
@@ -273,45 +451,45 @@
         },
         {
           "id": "c8e68588-a613-47e4-9c13-e3e29dec55a6",
-          "title": "USOME",
+          "title": "Company Website",
           "isURL": true,
           "details": "https://www.linkedin.com/company/usome/"
         }
       ],
       "Technologies": [
         {
-          "title": "Tools & Technologies",
-          "techs": [".Net", "MVC", "JavaScript", "MSSQL", "Asure"]
+          "title": "Technologies",
+          "techs": [".NET", "MVC", "JavaScript", "MSSQL", "Azure", "Git"]
         }
       ],
-      "KeyRoleHeading": "KeyRole",
+      "KeyRoleHeading": "Key Role",
       "KeyRoleDetails": [
         {
           "id": "e5ca6d91-ca16-4323-918d-fdccd60120b6",
-          "details": "Coordinated with business analysts for the project requirements, creating the technical document."
+          "details": "Coordinated with business analysts for project requirements and created technical documentation."
         },
         {
           "id": "99c6999b-11d2-4484-9626-0332bf948ac9",
-          "details": "Communicated with cross-functional teams, including QA, UI/UX, and product management, to ensure smooth project execution"
+          "details": "Communicated with cross-functional teams, including QA, UI/UX, and product management, to ensure smooth project execution."
         },
         {
           "id": "38e10f3e-dadf-46c1-b2d6-1e041f731044",
-          "details": "Implemented scrum, to enhance teamʼs productivity and efficiency"
+          "details": "Implemented Scrum to enhance team productivity and efficiency."
         },
         {
           "id": "3c227b0b-3b11-4751-845d-b70cec85b4e6",
-          "details": "Created architecture for the project and helped team members to resolve the task and also involved in the code review process"
+          "details": "Created architecture for the project, helped team members resolve tasks, and was involved in the code review process."
         }
       ],
-      "KeyAchievementHeading": "Key Achievement",
+      "KeyAchievementHeading": "Key Achievements",
       "KeyAchievementDetails": [
         {
           "id": "e5ca6d91-ca16-4323-918d-fdccd60120b6",
-          "details": "As a team lead, maintained the communication channel among the team members and to develop software for cargo logistics"
+          "details": "As a team lead, maintained communication channels among team members to develop software for cargo logistics."
         },
         {
           "id": "99c6999b-11d2-4484-9626-0332bf948ac9",
-          "details": "Implemented the Azure for kanban board and CI/CD pipeline for the smooth deployment process."
+          "details": "Implemented Azure for kanban board and CI/CD pipeline for smooth deployment."
         }
       ]
     }
@@ -319,24 +497,24 @@
   {
     "id": "7b1498d2-ab98-4840-9b7f-0973efaf900c",
     "title": "Multi-Vendor E-commerce & Logistics Platform",
-    "description": "Developed a comprehensive multi-vendor e-commerce and logistics platform enabling local businesses to manage online storefronts, inventory, payments, and order fulfillment through a centralized admin dashboard and mobile applications. The system supports super-admin oversight, individual shopkeeper dashboards, real-time parcel tracking, and in-app chat between customers and vendors—delivering a full-cycle retail and restaurant management MVP",
+    "description": "Developed a comprehensive multi-vendor e-commerce and logistics platform enabling local businesses to manage online storefronts, inventory, payments, and order fulfillment through a centralized admin dashboard and mobile applications. The system supports super-admin oversight, individual shopkeeper dashboards, real-time parcel tracking, and in-app chat between customers and vendors—delivering a full-cycle retail and restaurant management MVP.",
     "url": "#",
     "category": "Web Application/Mobile Application",
     "img": "/images/Software Development.png",
     "ProjectHeader": {
-      "title": "Multi Store Ecommerce",
-      "publishDate": ["03-2020", "12-2020"],
-      "tags": ["Web Application,Mobile Application"]
+      "title": "Multi-Vendor E-commerce & Logistics Platform",
+      "publishDate": ["Mar 2020", "Dec 2020"],
+      "tags": "Full Stack Software Engineer"
     },
     "ProjectImages": [
       {
         "id": "c8e68588-a613-47e4-9c13-e3e29dec55a6",
-        "title": "Multi Store Ecommerce",
-        "img": "/images/Software Development.png"
+        "title": "Multi-Vendor E-commerce & Logistics Platform",
+        "img": "/images/ecommerce-platform.jpg"
       }
     ],
     "ProjectInfo": {
-      "ClientHeading": "About Client",
+      "ClientHeading": "Research Project",
       "CompanyInfo": [
         {
           "id": "b0701d9c-4f5b-4e10-8f5a-30d70c5d12f2",
@@ -347,15 +525,23 @@
       ],
       "Technologies": [
         {
-          "title": "Tools & Technologies",
-          "techs": [".Net", "API", "Angular", "MSSQL", "React-Native", "NGRX"]
+          "title": "Technologies",
+          "techs": [
+            ".NET Core",
+            "Angular",
+            "React Native",
+            "MSSQL",
+            "NGRX",
+            "Redux",
+            "REST API"
+          ]
         }
       ],
-      "KeyRoleHeading": "KeyRole",
+      "KeyRoleHeading": "Key Role",
       "KeyRoleDetails": [
         {
           "id": "e5ca6d91-ca16-4323-918d-fdccd60120b6",
-          "details": "Architected and built an Angular admin dashboard with NGRX for state management, allowing super-admins and shopkeepers to onboard, customize stores, manage inventory, track logistics, and view payment analytics"
+          "details": "Architected and built an Angular admin dashboard with NGRX for state management, allowing super-admins and shopkeepers to onboard, customize stores, manage inventory, track logistics, and view payment analytics."
         },
         {
           "id": "99c6999b-11d2-4484-9626-0332bf948ac9",
@@ -370,7 +556,7 @@
           "details": "Collaborated on system architecture and database design to support multi-tenancy, scalable vendor management, and seamless order-to-delivery workflows."
         }
       ],
-      "KeyAchievementHeading": "Key Achievement",
+      "KeyAchievementHeading": "Key Achievements",
       "KeyAchievementDetails": [
         {
           "id": "e5ca6d91-ca16-4323-918d-fdccd60120b6",
@@ -389,46 +575,53 @@
   },
   {
     "id": "d5a8b1e3-92c7-4f6d-a3b4-6e9f2c7d1089",
-    "title": "Software for Multi-Store System",
-    "description": "Mobile Application Development that enables store staff to generate and print QR-based price tags for products using a centralized system, and scan those tags via a mobile application to instantly retrieve detailed product information, reducing manual entry errors and improving inventory tracking accuracy MVP",
+    "title": "QR-Based Price Tag System for Multi-Store",
+    "description": "Mobile Application Development that enables store staff to generate and print QR-based price tags for products using a centralized system, and scan those tags via a mobile application to instantly retrieve detailed product information, reducing manual entry errors and improving inventory tracking accuracy.",
     "url": "#",
     "category": "Web Application/Mobile Application",
     "img": "/images/Software Development.png",
     "ProjectHeader": {
-      "title": "Multi Store Ecommerce",
-      "publishDate": ["01-2019", "08-2019"],
-      "tags": ["Web Application,Mobile Application"]
+      "title": "QR-Based Price Tag System",
+      "publishDate": ["Jan 2019", "Aug 2019"],
+      "tags": "Software Engineer"
     },
     "ProjectImages": [
       {
         "id": "c8e68588-a613-47e4-9c13-e3e29dec55a6",
-        "title": "Multi Store Ecommerce",
-        "img": "/images/Software Development.png"
+        "title": "QR-Based Price Tag System",
+        "img": "/images/qr-system.jpg"
       }
     ],
     "ProjectInfo": {
-      "ClientHeading": "About Client",
+      "ClientHeading": "Aerion Technologies",
       "CompanyInfo": [
         {
           "id": "b0701d9c-4f5b-4e10-8f5a-30d70c5d12f2",
-          "title": "Remote Job",
+          "title": "Remote",
           "isURL": false,
           "details": "Location"
         },
         {
           "id": "c8e68588-a613-47e4-9c13-e3e29dec55a6",
-          "title": "Aerion Technologies",
+          "title": "Company Website",
           "isURL": true,
           "details": "https://www.linkedin.com/company/aerion-technologies/"
         }
       ],
       "Technologies": [
         {
-          "title": "Tools & Technologies",
-          "techs": [".Net", "API", "Angular", "MSSQL", "React-Native", "NGRX"]
+          "title": "Technologies",
+          "techs": [
+            ".NET",
+            "React Native",
+            "Angular",
+            "MSSQL",
+            "REST API",
+            "QR Libraries"
+          ]
         }
       ],
-      "KeyRoleHeading": "KeyRole",
+      "KeyRoleHeading": "Key Role",
       "KeyRoleDetails": [
         {
           "id": "e5ca6d91-ca16-4323-918d-fdccd60120b6",
@@ -436,44 +629,43 @@
         },
         {
           "id": "99c6999b-11d2-4484-9626-0332bf948ac9",
-          "details": "scan product labels, view product details (pricing, stock levels, supplier info), and update inventory status directly from the app."
+          "details": "Enabled scanning of product labels to view product details (pricing, stock levels, supplier info) and update inventory status directly from the app."
         }
       ],
-      "KeyAchievementHeading": "Key Achievement",
+      "KeyAchievementHeading": "Key Achievements",
       "KeyAchievementDetails": [
         {
           "id": "e5ca6d91-ca16-4323-918d-fdccd60120b6",
-          "details": "Delivered MVP, from QR tag printing to mobile scanning and real-time data synchronization."
+          "details": "Delivered MVP from QR tag printing to mobile scanning and real-time data synchronization."
         },
         {
           "id": "99c6999b-11d2-4484-9626-0332bf948ac9",
-          "details": "Successfully integrated third-party QR libraries and print services into the system, enabling seamless label generation and offline-capable mobile scanning for store environments"
+          "details": "Successfully integrated third-party QR libraries and print services, enabling seamless label generation and offline-capable mobile scanning for store environments."
         }
       ]
     }
   },
-
   {
     "id": "cd1773b9-e9ff-46f8-a6bf-9c3372a8d941",
     "title": "GBcare Case Management System",
-    "description": "This system is designed to provide comprehensive and efficient medical assistance to nurses and healthcare professionals, ensuring they have access to the necessary resources and support to deliver high-quality patient care. It seamlessly integrates with existing health insurance systems, streamlining claims processing, billing, and reimbursement, while also offering a range of value-added services that cater to the unique needs of nursing staff. By providing timely and accurate medical assistance, this system aims to enhance nurse satisfaction, reduce administrative burdens, and promote better health outcomes for patients.",
+    "description": "This system is designed to provide comprehensive and efficient medical assistance to nurses and healthcare professionals, ensuring they have access to the necessary resources and support to deliver high-quality patient care. It seamlessly integrates with existing health insurance systems, streamlining claims processing, billing, and reimbursement, while also offering a range of value-added services that cater to the unique needs of nursing staff.",
     "url": "https://www.linkedin.cn/incareer/company/spiralogics-inc./",
     "category": "Web Application",
     "img": "/images/Software Development.png",
     "ProjectHeader": {
       "title": "GBcare Case Management System",
-      "publishDate": ["03-2016", "12-2019"],
-      "tags": ["Web Application"]
+      "publishDate": ["Mar 2016", "Dec 2019"],
+      "tags": "Tech Lead"
     },
     "ProjectImages": [
       {
         "id": "c8e68588-a613-47e4-9c13-e3e29dec55a6",
         "title": "GBcare Case Management System",
-        "img": "/images/Software Development.png"
+        "img": "/images/gbcare.jpg"
       }
     ],
     "ProjectInfo": {
-      "ClientHeading": "About Client",
+      "ClientHeading": "Spiralogics",
       "CompanyInfo": [
         {
           "id": "b0701d9c-4f5b-4e10-8f5a-30d70c5d12f2",
@@ -483,61 +675,69 @@
         },
         {
           "id": "c8e68588-a613-47e4-9c13-e3e29dec55a6",
-          "title": "Spiralogics",
-          "isURL": false,
+          "title": "Company Website",
+          "isURL": true,
           "details": "https://www.linkedin.cn/incareer/company/spiralogics-inc./"
         }
       ],
       "Technologies": [
         {
-          "title": "Tools & Technologies",
-          "techs": [".Net", "MVC", "JavaScript", "MSSQL", "Asure"]
+          "title": "Technologies",
+          "techs": [
+            ".NET",
+            "MVC",
+            "JavaScript",
+            "MSSQL",
+            "SSRS",
+            "Azure",
+            "Domain Driven Design"
+          ]
         }
       ],
-      "KeyRoleHeading": "KeyRole",
+      "KeyRoleHeading": "Key Role",
       "KeyRoleDetails": [
         {
           "id": "e5ca6d91-ca16-4323-918d-fdccd60120b6",
-          "details": "Worked as a Team lead, had to coordinate with business analysts for the requirement and create the task among the team members."
+          "details": "Worked as a Team Lead, coordinating with business analysts for requirements and creating tasks among team members."
         },
         {
           "id": "99c6999b-11d2-4484-9626-0332bf948ac9",
-          "details": "Involved in helping the team members and reviewing their code in order to maintain the code structure"
+          "details": "Involved in helping team members and reviewing their code to maintain code structure."
         },
         {
           "id": "38e10f3e-dadf-46c1-b2d6-1e041f731044",
-          "details": "Converted the existing application to .net MVC with Domain Driven Design and SSRS"
+          "details": "Converted the existing application to .NET MVC with Domain Driven Design and SSRS."
         },
         {
           "id": "3c227b0b-3b11-4751-845d-b70cec85b4e6",
-          "details": "The complex business logics were written stored procedures and views in the database in order to optimize the reporting system"
+          "details": "Complex business logic was written in stored procedures and views in the database to optimize the reporting system."
         },
         {
           "id": "b0701d9c-4f5b-4e10-8f5a-30d70c5d12f2",
-          "details": "Conducted extensive testing and debugging to ensure system stability and accuracy of the data processing"
+          "details": "Conducted extensive testing and debugging to ensure system stability and accuracy of data processing."
         },
         {
           "id": "c8e68588-a613-47e4-9c13-e3e29dec55a6",
-          "details": "Worked on support to handle the bugs after the system is being deployed."
+          "details": "Worked on support to handle bugs after system deployment."
         }
       ],
-      "KeyAchievementHeading": "Key Achievement",
+      "KeyAchievementHeading": "Key Achievements",
       "KeyAchievementDetails": [
         {
           "id": "e5ca6d91-ca16-4323-918d-fdccd60120b6",
-          "details": "Lead a group of 5 developers in a project in .net MVC undertaking the SDLC of the whole project"
+          "details": "Led a group of 5 developers in a .NET MVC project, undertaking the SDLC of the whole project."
         },
         {
           "id": "99c6999b-11d2-4484-9626-0332bf948ac9",
-          "details": "Had an experience with Web API, and SQLBI for reporting (SSRS)"
+          "details": "Gained experience with Web API and SQL BI for reporting (SSRS)."
         },
         {
           "id": "38e10f3e-dadf-46c1-b2d6-1e041f731044",
-          "details": "Implemented robust and scalable solutions to handle complex health data, workflows, and compliance requirements"
+          "details": "Implemented robust and scalable solutions to handle complex health data, workflows, and compliance requirements."
         },
         {
           "id": "3c227b0b-3b11-4751-845d-b70cec85b4e6",
-          "details": "Successfully delivered a comprehensive health case management system within a given time frame and received a positive feedback from clients"
+          "details": "Successfully delivered a comprehensive health case management system within the given timeframe and received positive feedback from clients."
         }
       ]
     }
@@ -545,24 +745,24 @@
   {
     "id": "d7b07e13-1a08-4610-a6e8-ce3b1f02ecb0",
     "title": "Loyalty Program for Retail Shop",
-    "description": "This System is an innovative platform designed to reward and engage loyal customers of the iconic retail brand. This system aims to create a personalized experience for each customer, fostering long-term relationships and driving repeat business.",
+    "description": "This system is an innovative platform designed to reward and engage loyal customers of an iconic retail brand. This system aims to create a personalized experience for each customer, fostering long-term relationships and driving repeat business.",
     "url": "https://www.linkedin.cn/incareer/company/spi-software-paradigms-international/",
     "category": "Web Application",
     "img": "/images/Software Development.png",
     "ProjectHeader": {
       "title": "Loyalty Program for Retail Shop",
-      "publishDate": ["01-2015", "12-2015"],
-      "tags": ["Web Application"]
+      "publishDate": ["Jan 2015", "Dec 2015"],
+      "tags": "Software Engineer"
     },
     "ProjectImages": [
       {
         "id": "c8e68588-a613-47e4-9c13-e3e29dec55a6",
         "title": "Loyalty Program for Retail Shop",
-        "img": "/images/Software Development.png"
+        "img": "/images/loyalty-program.jpg"
       }
     ],
     "ProjectInfo": {
-      "ClientHeading": "About Client",
+      "ClientHeading": "Software Paradigms International",
       "CompanyInfo": [
         {
           "id": "b0701d9c-4f5b-4e10-8f5a-30d70c5d12f2",
@@ -572,78 +772,86 @@
         },
         {
           "id": "c8e68588-a613-47e4-9c13-e3e29dec55a6",
-          "title": "Software Paradigms International",
+          "title": "Company Website",
           "isURL": true,
           "details": "https://www.linkedin.cn/incareer/company/spi-software-paradigms-international/"
         }
       ],
       "Technologies": [
         {
-          "title": "Tools & Technologies",
-          "techs": [".Net", "MVC", "JavaScript", "MSSQL", "HTML", "knoutjs"]
+          "title": "Technologies",
+          "techs": [
+            ".NET",
+            "MVC",
+            "JavaScript",
+            "MSSQL",
+            "Knockout.js",
+            "HTML",
+            "NUnit"
+          ]
         }
       ],
-      "KeyRoleHeading": "KeyRole",
+      "KeyRoleHeading": "Key Role",
       "KeyRoleDetails": [
         {
           "id": "e5ca6d91-ca16-4323-918d-fdccd60120b6",
-          "details": "Worked in design documents and technical documents"
+          "details": "Worked on design documents and technical documents."
         },
         {
           "id": "99c6999b-11d2-4484-9626-0332bf948ac9",
-          "details": "Created different unit test cases in NUnit"
+          "details": "Created different unit test cases in NUnit."
         },
         {
           "id": "38e10f3e-dadf-46c1-b2d6-1e041f731044",
-          "details": "Worked in business layer and data conversion from and DTOs and modules"
+          "details": "Worked in business layer, data conversion, DTOs, and modules."
         },
         {
           "id": "3c227b0b-3b11-4751-845d-b70cec85b4e6",
-          "details": "Got the understanding of the two way binding javascript library, knockout js"
+          "details": "Gained understanding of two-way binding JavaScript library, Knockout.js."
         },
         {
           "id": "b0701d9c-4f5b-4e10-8f5a-30d70c5d12f2",
-          "details": "Created various client side validation in javascript"
+          "details": "Created various client-side validations in JavaScript."
         }
       ],
-      "KeyAchievementHeading": "Key Achievement",
+      "KeyAchievementHeading": "Key Achievements",
       "KeyAchievementDetails": [
         {
           "id": "e5ca6d91-ca16-4323-918d-fdccd60120b6",
-          "details": "Enhance my knowledge in software design pattern and architecture Domain Driven Design)"
+          "details": "Enhanced knowledge of software design patterns and architecture (Domain Driven Design)."
         },
         {
           "id": "99c6999b-11d2-4484-9626-0332bf948ac9",
-          "details": "Enhanced my web development skills"
+          "details": "Enhanced web development skills."
         },
         {
           "id": "38e10f3e-dadf-46c1-b2d6-1e041f731044",
-          "details": "Worked on various documentation like design documents and technical documents"
+          "details": "Worked on various documentation like design documents and technical documents."
         }
       ]
     }
   },
   {
     "id": "8660cc7f-5099-48ea-a6a9-8fbebf537926",
-    "title": "Software for Co-operative financial institutions",
-    "description": "This project is a web-based cooperative software designed to manage client savings accounts, track transactions, and generate accurate financial reports including Trial Balance, Balance Sheets, and other key performance indicators",
+    "title": "Cooperative Financial Management System",
+    "description": "This project is a web-based cooperative software designed to manage client savings accounts, track transactions, and generate accurate financial reports including Trial Balance, Balance Sheets, and other key performance indicators.",
     "url": "https://www.linkedin.cn/incareer/company/whitehatengineering",
     "category": "Web Application",
     "img": "/images/Software Development.png",
     "ProjectHeader": {
-      "title": "Co-operative financial institutions",
-      "publishDate": ["03-2013", "12-2014"],
-      "tags": ["FullStack Software Engineer"]
+      "title": "Cooperative Financial Management System",
+      "publishDate": ["Mar 2013", "Dec 2014"],
+      "tags": "Software Engineer"
     },
     "ProjectImages": [
       {
         "id": "e26a7a26-db2a-4827-898e-058026e523cf",
-        "title": "Co-operative financial institutions",
-        "img": "/images/Software Development.png"
+        "title": "Cooperative Financial Management System",
+        "img": "/images/cooperative-system.jpg"
       }
     ],
     "ProjectInfo": {
-      "ClientHeading": "GreenApple Pvt,Ltd",
+      "ClientHeading": "GreenApple Pvt. Ltd.",
       "CompanyInfo": [
         {
           "id": "b0701d9c-4f5b-4e10-8f5a-30d70c5d12f2",
@@ -653,70 +861,70 @@
         },
         {
           "id": "c8e68588-a613-47e4-9c13-e3e29dec55a6",
-          "title": "GreenApple Pvt,Ltd",
+          "title": "GreenApple Pvt. Ltd.",
           "isURL": false,
-          "details": "GreenApple Pvt,Ltd"
+          "details": "GreenApple Pvt. Ltd."
         }
       ],
       "Technologies": [
         {
-          "title": "Tools & Technologies",
-          "techs": ["c#", ".NET", "MVC", "MSSQL", "Stored Procedures"]
+          "title": "Technologies",
+          "techs": ["C#", ".NET", "MVC", "MSSQL", "Stored Procedures"]
         }
       ],
-      "KeyRoleHeading": "KeyRole",
+      "KeyRoleHeading": "Key Role",
       "KeyRoleDetails": [
         {
           "id": "99c6999b-11d2-4484-9626-0332bf948ac9",
-          "details": "Learned the web based structure in Asp Net with user controls and client side validations"
+          "details": "Learned web-based structure in ASP.NET with user controls and client-side validations."
         },
         {
           "id": "38e10f3e-dadf-46c1-b2d6-1e041f731044",
-          "details": "Worked in SQL stored procedures and functions for report generations"
+          "details": "Worked on SQL stored procedures and functions for report generation."
         },
         {
           "id": "c8e68588-a613-47e4-9c13-e3e29dec55a6",
-          "details": "Worked in log maintenance to handle the error and downtime of the project"
+          "details": "Worked on log maintenance to handle errors and downtime of the project."
         }
       ],
-      "KeyAchievementHeading": "Key Achievement",
+      "KeyAchievementHeading": "Key Achievements",
       "KeyAchievementDetails": [
         {
           "id": "38e10f3e-dadf-46c1-b2d6-1e041f731044",
-          "details": "Enhance web application development with interactive UI in ASP .Net MVC"
+          "details": "Enhanced web application development with interactive UI in ASP.NET MVC."
         },
         {
           "id": "e5ca6d91-ca16-4323-918d-fdccd60120b6",
-          "details": "Optimize the performance by improving queries in the stored procedures."
+          "details": "Optimized performance by improving queries in stored procedures."
         },
         {
           "id": "99c6999b-11d2-4484-9626-0332bf948ac9",
-          "details": "Deployed the Web project with reporting system"
+          "details": "Deployed the web project with a reporting system."
         }
       ]
     }
   },
   {
     "id": "70df87bb-1f3b-4599-85e6-237dd2eadd27",
-    "title": "School Management System with Accounting System",
-    "description": "This system is a WPF-based desktop application that provides an integrated platform for managing school operations, including financial management, inventory control, and student account tracking. It offers a comprehensive solution for schools to streamline their administrative tasks and improve overall efficiency",
+    "title": "School Management System with Accounting",
+    "description": "This system is a WPF-based desktop application that provides an integrated platform for managing school operations, including financial management, inventory control, and student account tracking. It offers a comprehensive solution for schools to streamline their administrative tasks and improve overall efficiency.",
     "url": "https://www.linkedin.cn/incareer/company/whitehatengineering",
-    "category": "Web Application",
+    "category": "Desktop Application",
     "img": "/images/Software Development.png",
     "ProjectHeader": {
-      "title": "School Management System with Accounting System",
-      "publishDate": ["03-2013", "12-2014"],
-      "tags": ["Intern Software Engineer"]
+      "title": "School Management System with Accounting",
+      "publishDate": ["Mar 2013", "Dec 2014"],
+      "tags": "Intern Software Engineer"
     },
     "ProjectImages": [
       {
         "id": "e26a7a26-db2a-4827-898e-058026e523cf",
-        "title": "School Management System with Accounting System",
-        "img": "/images/Software Development.png"
+        "title": "School Management System with Accounting",
+        "img": "/images/school-management.jpg"
       }
     ],
     "ProjectInfo": {
-      "ClientHeading": "GreenApple Pvt,Ltd",
+      "ClientHeading": "GreenApple Pvt. Ltd.",
       "CompanyInfo": [
         {
           "id": "b0701d9c-4f5b-4e10-8f5a-30d70c5d12f2",
@@ -726,53 +934,53 @@
         },
         {
           "id": "283a2ebc-5be0-4882-8540-6b27b55cdd9f",
-          "title": "GreenApple",
+          "title": "GreenApple Pvt. Ltd.",
           "isURL": false,
-          "details": "GreenApple"
+          "details": "GreenApple Pvt. Ltd."
         }
       ],
       "Technologies": [
         {
-          "title": "Tools & Technologies",
-          "techs": ["UNITY", "c#", "API", "Postgres", "GITHUB", "Ollama", "LLM"]
+          "title": "Technologies",
+          "techs": ["C#", ".NET", "WPF", "MSSQL"]
         }
       ],
-      "KeyRoleHeading": "KeyRole",
+      "KeyRoleHeading": "Key Role",
       "KeyRoleDetails": [
         {
           "id": "c8e68588-a613-47e4-9c13-e3e29dec55a6",
-          "details": "Contributed to the development of an error handling mechanism to improve the stability"
+          "details": "Contributed to the development of an error handling mechanism to improve stability."
         },
         {
           "id": "e5ca6d91-ca16-4323-918d-fdccd60120b6",
-          "details": "Collaborated with seniors to design and implement the software"
+          "details": "Collaborated with seniors to design and implement the software."
         },
         {
           "id": "e26a7a26-db2a-4827-898e-058026e523cf",
-          "details": "Worked in a business layer for an accounting system which included financial reports with paginations"
+          "details": "Worked on the business layer for an accounting system which included financial reports with pagination."
         }
       ],
-      "KeyAchievementHeading": "Key Achievement",
+      "KeyAchievementHeading": "Key Achievements",
       "KeyAchievementDetails": [
         {
           "id": "38e10f3e-dadf-46c1-b2d6-1e041f731044",
-          "details": "Learned the code structure, architecture in WPF and version control"
+          "details": "Learned code structure, architecture in WPF, and version control."
         },
         {
           "id": "e5ca6d91-ca16-4323-918d-fdccd60120b6",
-          "details": "Started as an intern and promoted to associate software engineer"
+          "details": "Started as an intern and was promoted to Associate Software Engineer."
         },
         {
           "id": "99c6999b-11d2-4484-9626-0332bf948ac9",
-          "details": "Implemented a feature of data visualization, enhancing the usability of application"
+          "details": "Implemented a data visualization feature, enhancing the usability of the application."
         },
         {
           "id": "2ed6cdd0-94c5-49cc-a3b8-7e9c4f2ca9af",
-          "details": "Contributed in a successful launch of the software."
+          "details": "Contributed to the successful launch of the software."
         },
         {
           "id": "dfeebd21-e0ec-42ab-92df-f4adac6d2f15",
-          "details": "Enhance programming skills in C# .net"
+          "details": "Enhanced programming skills in C# .NET."
         }
       ]
     }
