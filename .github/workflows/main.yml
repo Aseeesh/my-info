@@ -43,11 +43,20 @@ jobs:
           touch public/.nojekyll
           echo "✅ Created .nojekyll file"
 
-      - name: Build
-        run: pnpm run build
+      - name: Build with verbose output
+        run: |
+          pnpm run build 2>&1 | tee build.log
+          echo "--- BUILD EXIT CODE: $? ---"
         env:
           NEXT_PUBLIC_BASE_PATH: /my-info
           NODE_ENV: production
+
+      - name: Show build log if failed
+        if: failure()
+        run: |
+          echo "=== BUILD LOG ==="
+          cat build.log
+          echo "=== END BUILD LOG ==="
 
       - name: Verify build output
         run: |
@@ -56,6 +65,8 @@ jobs:
             ls -la ./out
           else
             echo "❌ Build failed: out directory does not exist"
+            echo "Current directory contents:"
+            ls -la
             exit 1
           fi
 
