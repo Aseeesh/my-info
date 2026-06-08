@@ -33,13 +33,11 @@ jobs:
         uses: actions/setup-node@v4
         with:
           node-version: 24
-          cache: "pnpm"
 
       - name: Install pnpm
-        uses: pnpm/action-setup@v4
-        with:
-          version: 9
-          run_install: false
+        run: |
+          npm install -g pnpm@9
+          pnpm --version
 
       - name: Get pnpm store directory
         shell: bash
@@ -64,31 +62,22 @@ jobs:
           echo "✅ Created .nojekyll file"
 
       - name: Build with Next.js
-        id: build
         run: |
-          pnpm run build 2>&1 | tee build.log
-          echo "Build completed with exit code: $?"
+          pnpm run build
+          echo "Build completed"
 
       - name: Check build output
         run: |
-          echo "Checking for out directory..."
           if [ -d "./out" ] && [ "$(ls -A ./out)" ]; then
-            echo "✅ out directory exists and is not empty"
-            echo "Contents of out directory:"
+            echo "✅ Build successful! out directory exists"
             ls -la ./out/
-            echo "Number of files: $(find ./out -type f | wc -l)"
           else
-            echo "❌ Build failed: out directory is missing or empty"
-            echo "Current directory contents:"
+            echo "❌ Build failed: out directory is missing"
             ls -la
-            echo ""
-            echo "Build log:"
-            cat build.log
             exit 1
           fi
 
       - name: Upload Pages Artifact
-        if: success()
         uses: actions/upload-pages-artifact@v3
         with:
           path: ./out
