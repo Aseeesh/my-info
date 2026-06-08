@@ -14,11 +14,11 @@ const nextConfig = {
     imageSizes: [16, 32, 48, 64, 96, 128, 256, 384],
     deviceSizes: [640, 750, 828, 1080, 1200, 1920, 2048, 3840],
   },
-  experimental: {
-    nextScriptWorkers: true,
-  },
+  // Comment out experimental if it causes issues
+  // experimental: {
+  //   nextScriptWorkers: true,
+  // },
   output: "export",
-  //output: "standalone",
   trailingSlash: true,
   reactStrictMode: true,
   transpilePackages: ["next-image-export-optimizer"],
