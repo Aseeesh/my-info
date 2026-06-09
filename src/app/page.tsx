@@ -4,6 +4,8 @@
 import Introduction from "@/components/Introduction";
 import { motion } from "framer-motion";
 
+import iconImage from "./images/profile.png";
+
 export default function HomePage() {
   return (
     <motion.div
@@ -14,7 +16,7 @@ export default function HomePage() {
     >
       <div className="divide-y divide-gray-200 dark:divide-gray-700">
         <div className="space-y-2 pb-8 pt-6 md:space-y-5">
-          <Introduction />
+          <Introduction iconImage={iconImage} />
         </div>
       </div>
     </motion.div>

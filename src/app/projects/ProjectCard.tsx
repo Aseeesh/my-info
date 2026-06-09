@@ -5,7 +5,7 @@ import { motion } from "framer-motion";
 import Link from "next/link";
 import { FiCalendar } from "react-icons/fi";
 import ImageWithLoading from "@/components/ImageWithLoading";
-const iconImage = "/images/Idea.png";
+import iconImage from "../images/Idea.png";
 
 export default function ProjectCard(
   props: Project & {
@@ -32,10 +32,10 @@ export default function ProjectCard(
             <ImageWithLoading
               src={iconImage}
               alt={props.title}
-              width={420}
-              height={240}
-              className="rounded-lg"
-              imageClassName="h-48 w-full object-cover transition-all duration-300 group-hover:scale-105"
+              width={400}
+              height={300}
+              className="w-full"
+              imageClassName="w-full h-auto object-cover"
             />
           </div>
 

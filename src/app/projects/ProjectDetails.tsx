@@ -11,7 +11,7 @@ import {
 } from "react-icons/fi";
 import { useParams, useRouter } from "next/navigation";
 import { motion } from "framer-motion";
-const iconImage = "/images/Idea.png";
+import iconImage from "../images/Idea.png";
 export default function ProjectDetails() {
   const params = useParams();
   const router = useRouter();

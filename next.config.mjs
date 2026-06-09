@@ -1,3 +1,4 @@
+// next.config.js
 import CopyPlugin from "copy-webpack-plugin";
 import { createRequire } from "node:module";
 import path from "path";
@@ -33,10 +34,16 @@ const nextConfig = {
     config.resolve.alias.canvas = false;
     config.resolve.fallback = { fs: false };
 
+    // Copy static images to output
     if (!isServer) {
       config.plugins.push(
         new CopyPlugin({
           patterns: [
+            {
+              from: path.join(process.cwd(), "public/images"),
+              to: "images/",
+              noErrorOnMissing: true,
+            },
             {
               from: path.join(
                 path.dirname(

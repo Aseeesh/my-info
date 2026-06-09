@@ -4,7 +4,9 @@ import ExportedImage from "next-image-export-optimizer";
 import { useState } from "react";
 
 interface ImageWithLoadingProps {
-  src: string;
+  src:
+    | string
+    | { src: string; height: number; width: number; blurDataURL?: string };
   alt: string;
   width: number;
   height: number;
@@ -28,7 +30,7 @@ export default function ImageWithLoading({
   return (
     <div className={`relative overflow-hidden ${className}`}>
       {/* Loading State */}
-      {isLoading && (
+      {isLoading && !hasError && (
         <div className="absolute inset-0 flex items-center justify-center bg-gray-100 dark:bg-gray-700">
           <div className="flex flex-col items-center gap-2">
             <div className="h-8 w-8 animate-spin rounded-full border-4 border-emerald-500 border-t-transparent"></div>
@@ -63,7 +65,7 @@ export default function ImageWithLoading({
         </div>
       )}
 
-      {/* Actual Image */}
+      {/* Actual Image - Pass imported image directly */}
       <ExportedImage
         src={src}
         alt={alt}

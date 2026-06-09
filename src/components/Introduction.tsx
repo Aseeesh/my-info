@@ -10,9 +10,9 @@ import { RoughNotation } from "react-rough-notation";
 import colors from "tailwindcss/colors";
 import { motion } from "framer-motion";
 import { useState, useEffect } from "react";
-const iconImage = "/images/profile.png";
+import { StaticImageData } from "next/image";
 
-export default function Introduction() {
+export default function Introduction(props: { iconImage: StaticImageData }) {
   const { isLoading, siteInfo, error } = useSiteInfo();
   const [isVisible, setIsVisible] = useState(false);
 
@@ -56,7 +56,7 @@ export default function Introduction() {
             >
               <div className="relative mb-10 overflow-hidden rounded-2xl shadow-2xl sm:mb-0">
                 <ImageWithLoading
-                  src={iconImage}
+                  src={props.iconImage}
                   alt="Ashish Rijal - Software Engineer"
                   width={400}
                   height={400}
