@@ -51,7 +51,7 @@ type ProjectDetail = {
 
 import data from "./data.json";
 export function parseData(): Project[] {
-  return data.map((item: Project) => ({
+  return data.map((item: any) => ({
     id: item.id,
     title: item.title,
     description: item.description,
@@ -63,7 +63,10 @@ export function parseData(): Project[] {
       publishDate: Array.isArray(item.ProjectHeader.publishDate)
         ? item.ProjectHeader.publishDate
         : [item.ProjectHeader.publishDate],
-      tags: item.ProjectHeader.tags,
+      // Convert tags to array if it's a string
+      tags: Array.isArray(item.ProjectHeader.tags)
+        ? item.ProjectHeader.tags
+        : [item.ProjectHeader.tags],
     },
     ProjectImages: item.ProjectImages.map((img: ProjectImage) => ({
       id: img.id,
@@ -78,22 +81,22 @@ export function parseData(): Project[] {
         isURL: info.isURL,
         details: info.details,
       })),
-      Technologies: item.ProjectInfo.Technologies.map((info: Technology) => ({
-        title: info.title,
-        techs: info.techs,
+      Technologies: item.ProjectInfo.Technologies.map((tech: Technology) => ({
+        title: tech.title,
+        techs: tech.techs,
       })),
       KeyRoleHeading: item.ProjectInfo.KeyRoleHeading,
       KeyRoleDetails: item.ProjectInfo.KeyRoleDetails.map(
-        (item: ProjectDetail) => ({
-          id: item.id,
-          details: item.details,
+        (detail: ProjectDetail) => ({
+          id: detail.id,
+          details: detail.details,
         }),
       ),
       KeyAchievementHeading: item.ProjectInfo.KeyAchievementHeading,
       KeyAchievementDetails: item.ProjectInfo.KeyAchievementDetails.map(
-        (item: ProjectDetail) => ({
-          id: item.id,
-          details: item.details,
+        (detail: ProjectDetail) => ({
+          id: detail.id,
+          details: detail.details,
         }),
       ),
     },

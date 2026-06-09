@@ -11,7 +11,6 @@ export async function generateStaticParams() {
     return []; // Return an empty array on error as per Next.js 14 requirements
   }
 }
-const FILE_ID = "1l0bq3sx1vD6ngVG3cb6VzXPeeKSkvN-MaHcJb1TACKs";
 
 export default function ProductDetails() {
   return <ProjectDetails />;

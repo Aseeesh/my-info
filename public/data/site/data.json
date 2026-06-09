@@ -6,7 +6,7 @@
     "applicationName": "ashish-rijal",
     "headerTitle": "ashish-rijal",
     "author": {
-      "name": "Ashsih Rijal",
+      "name": "Ashish Rijal",
       "nickname": "Ashish",
       "url": "https://github.com/Aseeesh/my-info",
       "role": "Full-stack Developer",
@@ -29,6 +29,54 @@
       "instagram": "https://www.instagram.com/ashish.rijal9/",
       "threads": "https://www.threads.net/@ashish.rijal9",
       "devto": "#"
+    },
+    "resume": {
+      "googleDriveId": "1l0bq3sx1vD6ngVG3cb6VzXPeeKSkvN-MaHcJb1TACKs",
+      "title": "Professional Resume",
+      "subtitle": "A comprehensive overview of my professional journey, skills, and achievements",
+      "stats": [
+        {
+          "label": "Pages",
+          "value": "2",
+          "icon": "FiFileText"
+        },
+        {
+          "label": "Experience",
+          "value": "10+",
+          "icon": "FiBriefcase"
+        },
+        {
+          "label": "Projects",
+          "value": "11",
+          "icon": "FiAward"
+        }
+      ],
+      "quickInfo": {
+        "experience": "10+ Years",
+        "location": "Kathmandu, Nepal",
+        "availability": "Open to Work",
+        "languages": ["English", "Nepali"],
+        "timezone": "UTC+5:45 (Nepal Time)"
+      },
+      "coreSkills": [
+        "Full Stack Development",
+        "System Architecture",
+        "Team Leadership",
+        "Cloud Computing",
+        "IoT Integration",
+        "Mobile Development",
+        "Database Design",
+        "API Development",
+        "Agile Methodologies",
+        ".NET Core",
+        "React",
+        "Next.js",
+        "TypeScript"
+      ],
+      "additionalInfo": {
+        "title": "Want to know more?",
+        "description": "Check out my projects or feel free to reach out for collaboration opportunities"
+      }
     },
     "sourceCode": "https://github.com/Aseeesh/my-info",
     "keywords": [
