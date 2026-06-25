@@ -112,7 +112,7 @@ export default function ContactPage() {
               Contact
             </h3>
             <p className="text-sm text-gray-600 dark:text-gray-400">
-              +977 9800000000
+              +64 22 089 2026
             </p>
           </div>
         </motion.div>
