@@ -7,13 +7,13 @@ import { FiMaximize, FiMinimize } from "react-icons/fi";
 export default function ContactMap() {
   const [isExpanded, setIsExpanded] = useState(false);
 
-  // Kathmandu, Nepal coordinates
-  const latitude = 27.7172;
-  const longitude = 85.324;
+  // Glen Eden, Auckland, New Zealand coordinates
+  const latitude = -36.9076;
+  const longitude = 174.6517;
   const mapUrl = `https://www.openstreetmap.org/export/embed.html?bbox=${longitude - 0.1}%2C${latitude - 0.1}%2C${longitude + 0.1}%2C${latitude + 0.1}&layer=mapnik&marker=${latitude}%2C${longitude}`;
 
   // Google Maps alternative (uncomment if you prefer Google Maps)
-  // const googleMapsUrl = `https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d226142.4777494911!2d85.24487245!3d27.70835465!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39eb1980c5d2c8f1%3A0x8f8c4e9c9d9c9d9c!2sKathmandu%2C%20Nepal!5e0!3m2!1sen!2s!4v1699999999999!5m2!1sen!2s`;
+  // const googleMapsUrl = `https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3192.274287230869!2d174.649437!3d-36.907565!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6d0d47b5f5b4f4b3%3A0x3b9c8a7e9d3f4c5d!2sGlen%20Eden%2C%20Auckland%2C%20New%20Zealand!5e0!3m2!1sen!2s!4v1699999999999!5m2!1sen!2s`;
 
   return (
     <motion.div
@@ -28,7 +28,7 @@ export default function ContactMap() {
             Find Me Here
           </h3>
           <p className="text-sm text-gray-600 dark:text-gray-400">
-            Kathmandu, Nepal
+            Glen Eden, Auckland, New Zealand
           </p>
         </div>
         <button
@@ -55,7 +55,7 @@ export default function ContactMap() {
           allowFullScreen
           loading="lazy"
           referrerPolicy="no-referrer-when-downgrade"
-          title="Location Map - Kathmandu, Nepal"
+          title="Location Map - Glen Eden, Auckland, New Zealand"
           className="rounded-b-2xl"
         />
       </div>
@@ -66,7 +66,7 @@ export default function ContactMap() {
           <div className="flex items-center gap-2">
             <div className="h-2 w-2 rounded-full bg-emerald-500"></div>
             <span className="text-gray-600 dark:text-gray-400">
-              Based in Kathmandu, Nepal
+              Based in Glen Eden, Auckland, New Zealand
             </span>
           </div>
           <div className="flex items-center gap-2">
@@ -84,11 +84,11 @@ export default function ContactMap() {
               />
             </svg>
             <span className="text-gray-600 dark:text-gray-400">
-              UTC+5:45 (Nepal Time)
+              UTC+12 (New Zealand Time)
             </span>
           </div>
           <a
-            href="https://maps.google.com/?q=Kathmandu+Nepal"
+            href="https://maps.google.com/?q=Glen+Eden+Auckland+New+Zealand"
             target="_blank"
             rel="noopener noreferrer"
             className="text-emerald-600 transition-colors hover:text-emerald-700 dark:text-emerald-400"

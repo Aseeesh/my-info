@@ -191,7 +191,7 @@ export default function ResumePage() {
                     Location
                   </span>
                   <span className="text-sm font-medium text-gray-800 dark:text-white">
-                    Kathmandu, Nepal
+                    Glen Eden, Aukland, New Zealand
                   </span>
                 </div>
                 <div className="flex items-center justify-between border-b border-gray-100 pb-2 dark:border-gray-700">

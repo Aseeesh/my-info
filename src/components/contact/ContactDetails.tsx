@@ -86,7 +86,7 @@ function ContactDetails() {
           <div>
             <p className="text-xs text-gray-500 dark:text-gray-400">Location</p>
             <p className="text-sm font-medium text-gray-700 dark:text-gray-300">
-              Kathmandu, Nepal
+              Glen Eden, Aukland, New Zealand
             </p>
           </div>
         </div>

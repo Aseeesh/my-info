@@ -11,7 +11,7 @@ export default function Map() {
       className="mt-8 overflow-hidden rounded-2xl shadow-lg"
     >
       <iframe
-        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d226142.4777494911!2d85.24487245!3d27.70835465!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39eb1980c5d2c8f1%3A0x8f8c4e9c9d9c9d9c!2sKathmandu%2C%20Nepal!5e0!3m2!1sen!2s!4v1699999999999!5m2!1sen!2s"
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3192.274287230869!2d174.649437!3d-36.907565!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6d0d47b5f5b4f4b3%3A0x3b9c8a7e9d3f4c5d!2sGlen%20Eden%2C%20Auckland%2C%20New%20Zealand!5e0!3m2!1sen!2s!4v1699999999999!5m2!1sen!2s"
         width="100%"
         height="300"
         style={{ border: 0 }}

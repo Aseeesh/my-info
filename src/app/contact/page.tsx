@@ -76,7 +76,7 @@ export default function ContactPage() {
               Location
             </h3>
             <p className="text-sm text-gray-600 dark:text-gray-400">
-              Kathmandu, Nepal
+              Glen Eden, Aukland, New Zealand
             </p>
           </div>
 
